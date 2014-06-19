@@ -1,0 +1,132 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+ru:
+  activerecord:
+    attributes:
+      contact_form:
+        email: ""
+        name: "Name"
+        massage: "Massage"
+    errors:
+      models:
+        contact_form:
+          attributes:
+            email:
+              blank: ""
+              taken: ""
+              invalid: ""
+            name:
+              blank: "должна быть в диапазоне от 1 до 7 включительно"
+            massage:
+              too_long:
+               one: "is too long (maximum is 1 character)"
+               other: "is too long (maximum is %{count} characters)"
+              too_short:
+               one: "is too short (minimum is 1 character)"
+               other: "is too short (minimum is %{count} characters)"
+            name:
+              too_long:
+               one: "is too long (maximum is 1 character)"
+               other: "is too long (maximum is %{count} characters)"
+              too_short:
+               one: "is too short (minimum is 1 character)"
+               other: "is too short (minimum is %{count} characters)"
+  menu_1: "Домой"
+  menu_2: "О Нас"
+  menu_3: "Услуги"
+  menu_4: "Портфолио"
+  menu_5: "Команда"
+  menu_6: "Контакты"
+  about_title_1: "о нас"
+  about_title_2: "Кто мы. Узнайте нас лучше."
+  about_content_1: "Мы специализируеться на разработке веб и мобильных прихожений. Мы разрабатываем на основе Ruby, Php, Java, Objective-C."
+  about_content_2: "Мы создаем весело и мы создаем вместе."
+  about_content_3: "Хорошая работа заслуживает внимания, особенно если это значит, что вы не должны делать то же самое снова и снова.
+                    Мы делаем полностью прозрачным творчиский процесс разработчиков и дизайнеров."
+  about_content_4: "Не все сюрпризы являються сюрпризами.
+                    Мы часто общаемся с клиентами для определения точных потребностей, что бы успешно работать вместе."
+  about_content_5: "Разработка это личность в Интернете.
+                    Вы можете получить хорошую визуализацию за длительное время прежде чем люди начнут требовать большей функциональности.
+                    Мы знаем цену успешного развития, и именно поэтому мы ищем больше, чем просто талантливых разработчиков.
+                    Наша команда высоко мотивирована и мы всегда ищем возможности для обучения.
+                    Мы отлично разбираемся в современных языках программирования, наши разработчики отлично решают проблемы и предотвращают последствия."
+  services_title_1: "sitemaster"
+  services_title_2: "Что мы делаем. Все наши услуги."
+  services_content_1: "Мы дизайнеры и разработчики. Мы делаем невероятные вещи для веб-проектов."
+  services_content_2: "Мы специализируемся на разработке веб-приложений используя open-source технологии такие, как Ruby on Rails, Php, Java, и самые используемые стандарты JavaScript библиотек таких, как jQuery."
+  services_content_3: "РАЗРАБОТКА WEB ПРИЛОЖЕНИЙ"
+  services_content_4: "Php, Ryby on Rails Разработка. Создание HTML5 и CSS3 макетов. Web анимацмия JavaScript & Jquery. Мобильный web дизайн."
+  services_content_5: "РАЗРАБОТКА МОБИЛЬНЫХ ПРИЛОЖЕНИЙ"
+  services_content_6: "Создание iOS приложений для iPhone и iPad мобильных устройств. Создание android мобильных приложений."
+  services_content_7: "MAGENTO И WORDPRESS РАЗРАБОТКА"
+  services_content_8: "Разработка интернет магазинов на популярной CMS - Magento. Создание корпоративных, новостных сайтов - Wordpress CMS."
+  services_content_9: "ДРУГИЕ УСЛУГИ"
+  services_content_10: "Разработка для социальных сетей (facebook, vkontakte). Поддержка сайтов и приложений, хостинг. Сео оптимизация."
+  showcase_title_1: "портфолио"
+  showcase_title_2: "Посмотрите наше портфолио."
+  showcase_content_1: "Что нравиться в работе с нами >> Исследование >> Дизайн >> Разработка >> Развертывание!"
+  showcase_content_2: "Причина работы с нами, то что по завершению вы получите успешный проект.
+                      Мы не только профессиональные дизайнеры и опытные разработчики, мы так же любим создавать удивительные приложения."
+  team_title_1: "команда sitemaster"
+  team_title_2: "Знакомся с нашей командой."
+  team_content_1: "Мы на равных работаем в отличной команде, постоянно совершенствуем наши навыки и вместе развликаемся."
+  team_content_2: "Мы хотим услышать ваши идеи и говорить о потребностях вашего проекта. Мы хотим наилучшим образом создать приложение для Вас."
+  team_content_3: "Дубинин Денис"
+  team_content_4: "Front-End Разработчик"
+  team_content_5: "Дубинин Денис"
+  team_content_6: "Основатель"
+  team_content_7: "Дубинин Денис"
+  team_content_8: "Разработчик"
+  contact_title_1: "контакты"
+  contact_title_2: "Будь с нами на связи, не спамь."
+  contact_content_1: "Напишите нам, используя расположенную ниже форму контактов"
+  contact_content_2: "Имя *"
+  contact_content_3: "E-mail *"
+  contact_content_4: "Заголовок *"
+  contact_content_5: "Сообщение *"
+  contact_content_6: "Мы хотели бы работать с вами"
+  contact_content_7: "Начнем с краткого телефонного или Skype звонка, чтобы познакомиться с вами, и вашим проектом, чтобы увидеть, сколько уровней совместимости у нас есть.
+                      Если это хорошо подходит мы запланируем официальное исследовательское совещание, мы встретимся с вами в течение дня того что бы обсудить дизайн и функциональность проекта.
+                      После нашего знакомства мы представим подробную смету и график реализации проекта, и мы приступим к работе вскоре после этого."
+  contact_content_8: "бульвар Ивана Лепсе 8"
+  contact_content_9: "Киев"
+  contact_content_10: "Украина"
+  contact_content_11: "Телефон: +38 044 38 44 670 "
+  contact_content_12: "E-mail: master@sitemaster.com.ua"
+  contact_content_13: "Website: www.sitemaster.com.ua"
+  contact_content_14: "ОТПР."
+  contact_content_15: "......"
+  contact_content_16: "Ваше сообщение отправлено."
+  contact_content_17: "В ближайшее время мы с Вами свяжемся."
+  contact_content_18: "Ваш файл"
+  contact_content_19: "ЗАГРУЗ."
+  footer_content_1: "Мы можем больше :)"
+  massage_content_1: "Привет:"
+  massage_content_2: "Ваш email:"
+  massage_content_3: "Ваша тема:"
+  massage_content_4: "Ваше сообщение:"
+  massage_content_5: "В ближайшее время мы с Вами свяжемся:"
+  massage_content_6: "Прикрепленный файл"
+
+
+
+

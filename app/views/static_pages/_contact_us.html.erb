@@ -1,0 +1,90 @@
+<div class="section contact-us" id="contact-us">
+  <div class="container">
+    <div class="arrow 06">
+      <img src="images/arrow/arrow_06.png" alt="arrow_06" />
+    </div>
+    <div class="subheader">
+      <div class="subheader-icon"></div>
+      <div class="subheader-text">
+        <%=t :contact_title_1 %> <span><%=t :contact_title_2 %></span>
+      </div>
+      <div class="subheader-separator"></div>
+    </div>
+    <div class="column-340  m-top-50 m-right-115 contact-form contact-us-x">
+      <div class="column-340">
+        <div class="summary m-bottom-40">
+          <%=t :contact_content_1 %>
+        </div>
+        <p class="m-bottom-22"></p>
+      </div>
+      <div class="clear"></div>
+      <%= form_for :contact_form, :url => url_for(:controller => 'contact_forms', :action => 'create'), :html => {:id => 'new_contact_form', :class => 'new_contact_form'}, remote: true do |f| %>
+            <label for="name"><%=t :contact_content_2 %></label>
+            <%= f.text_field :name, onkeyup: false %>
+            <label for="name"><%=t :contact_content_3 %></label>
+            <%= f.text_field :email, onkeyup: false %>
+            <label for="name"><%=t :contact_content_4 %></label>
+            <%= f.text_field :subject, onkeyup: false %>
+            <div class="massage-text-field">
+            <label for="name"><%=t :contact_content_5 %></label>
+            <%= f.text_area :massage, onkeyup: false %>
+            </div>
+            <%= f.button  "#{t :contact_content_14}", class: "submit-btn rounded", id: "submit-mail", data: {:'disable-with' => "#{t :contact_content_15}"} %>
+            <input id="uploadFile" placeholder="<%=t :contact_content_18 %>" disabled="disabled" />
+            <div class="fileUpload btn-upload">
+              <%=t :contact_content_19 %>
+            <%= f.file_field :attachment, class: "upload", id: "uploadBtn" %>
+            </div>
+
+
+      <% end %>
+      <div id="mail-message">
+        <table>
+          <tr>
+            <td>
+              <div id="mail-message-window">
+                <div class="mail-message-error" id="mail-message-header"></div>
+                <div class="team-member-name  m-bottom-10" id="mail-failure"><%=t :contact_content_16 %></div>
+                <p style="text-align: center" id="invalid-email"><%=t :contact_content_17 %></p>
+                <p style="text-align: center" id="footermail-success">&copy;<%= Date.today.year %> Sitemaster - <%=t :footer_content_1 %></p>
+                <input type="button" id="mail-message-btn" class="mail-message-btn rounded" value="OK" />
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="column-525 m-top-50">
+      <div class="summary m-bottom-40">
+        <%=t :contact_content_6 %>
+      </div>
+      <p class="m-bottom-22">
+        <%=t :contact_content_7 %>
+      </p>
+      <p>
+        <%=t :contact_content_8 %>
+        <br />
+        <%=t :contact_content_9 %>
+        <br />
+        <%=t :contact_content_10 %>
+      </p>
+      <p>
+        <%=t :contact_content_11 %>
+        <br />
+        <%=t :contact_content_12 %>
+        <br />
+        <%=t :contact_content_13 %>
+      </p>
+      <div class="socio_contact m-top-50">
+        <ul>
+          <li><a href="#" target="_blank" class="socio_contact_twitter"></a></li>
+          <li><a href="#" target="_blank" class="socio_contact_facebook"></a></li>
+          <li><a href="#" target="_blank" class="socio_contact_dribbble"></a></li>
+          <li><a href="#" target="_blank" class="socio_contact_behance"></a></li>
+          <li class="last"><a href="#" target="_blank" class="socio_contact_flickr"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+
+<%=t :massage_content_1 %> <%= @contact_form.name %><br>
+<%=t :massage_content_2 %> <%= @contact_form.email %><br>
+<%=t :massage_content_3 %> <%= @contact_form.subject %><br>
+<%=t :massage_content_4 %> <%= @contact_form.massage %><br><br>
+
+<%=t :massage_content_5 %><br>
+
+<%=t :massage_content_6 %> <a href="<%= root_url %><%=  @contact_form.attachment.url if @contact_form.attachment? %>"><%= @contact_form.attachment_file_name if @contact_form.attachment? %></a>
+
+</body>
+</html>

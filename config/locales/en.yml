@@ -1,0 +1,121 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  activerecord:
+    attributes:
+      contact_form:
+        email: ""
+        name: "Name"
+        massage: "Massage"
+    errors:
+      models:
+        contact_form:
+          attributes:
+            email:
+              blank: ""
+              taken: ""
+              invalid: ""
+            name:
+              blank: "должна быть в диапазоне от 1 до 7 включительно"
+            massage:
+              too_long:
+               one: "is too long (maximum is 1 character)"
+               other: "is too long (maximum is %{count} characters)"
+              too_short:
+               one: "is too short (minimum is 1 character)"
+               other: "is too short (minimum is %{count} characters)"
+            name:
+              too_long:
+               one: "is too long (maximum is 1 character)"
+               other: "is too long (maximum is %{count} characters)"
+              too_short:
+               one: "is too short (minimum is 1 character)"
+               other: "is too short (minimum is %{count} characters)"
+  menu_1: "Take Me Home"
+  menu_2: "About"
+  menu_3: "Services"
+  menu_4: "Showcase"
+  menu_5: "Our Team"
+  menu_6: "Contact Us"
+  about_title_1: "about"
+  about_title_2: "Who We Are. Get To Know Us Better."
+  about_content_1: "We are a company to develop mobile and web applications. We specialize in programming languages ​​such Ruby, Php, Java, Objective-C."
+  about_content_2: "We Create Fun & We Do Stuff Together."
+  about_content_3: "Good work is worth sharing, especially if it means you don't have to do the same things over and over again. As designers and developers we're completely transparent through the whole creative process."
+  about_content_4: "Not all surprises are good surprises. We communicate often with clients and bill for exact consulting hours, making us surprisingly awesome to work with"
+  about_content_5: "Development is the personality of the web. You can only get by on good looks for so long before people start demanding something more functional and lasting. We know the value of solid development, and that’s why we look for more than just talented developers. Our team is also highly motivated and always looking for opportunities to teach and learn. Well versed in the Ruby on Rails framework and beyond, our developers are excellent problem solvers and early adopters."
+  services_title_1: "sitemaster"
+  services_title_2: "What We Do. Our List Of Services."
+  services_content_1: "We are designers and developers. We make awesome things for the web."
+  services_content_2: "Sitemaster specializes in web applications using open-source technologies like Ruby on Rails, Php, Java, and most industry standard JavaScript libraries like jQuery."
+  services_content_3: "WEB APP DEVELOPMENT"
+  services_content_4: "Php, Ryby on Rails Development. Create HTML5 & CSS3 template. Web animation with JavaScript & Jquery. Responsive web design."
+  services_content_5: "MOBILE APP DEVELOPMENT"
+  services_content_6: "Create iOS applications for iPhone and iPad mobile devices. Create android mobile applications. We bring you app ideas to life."
+  services_content_7: "MAGENTO & WORDPRESS DEVELOPMENT"
+  services_content_8: "Ecommerce web development on the most popular CMS - Magento. Creation corporation, news sites on Wordpress CMS."
+  services_content_9: "OTHER SERVICES"
+  services_content_10: "Social networks development (facebook, vkontakte). Web apps support, hosting. Seo optimisation."
+  showcase_title_1: "showcase"
+  showcase_title_2: "Check Out Our Portfolio."
+  showcase_content_1: "What it's like to work with us >> Discovery >> Design >> Develop >> Deploy!"
+  showcase_content_2: "The reason for hiring us is, after all, to help you launch a successful product. Not only are we professional designers and expert developers, we also have a penchant for deploying awesome applications."
+  team_title_1: "sitemaster team"
+  team_title_2: "Meet Our Awesome Team."
+  team_content_1: "With a flat hierarchy and open business meetings, we work as equals, celebrate as a team, and make fun of each other face to face."
+  team_content_2: "We want to hear your ideas and talk about your project needs. We want to brainstorm beyond established norms and invent digital solutions."
+  team_content_3: "Denis Dubinin"
+  team_content_4: "Front-End Developer"
+  team_content_5: "Denis Dubinin"
+  team_content_6: "Founder"
+  team_content_7: "Denis Dubinin"
+  team_content_8: "Developer"
+  contact_title_1: "contact"
+  contact_title_2: "Stay In Touch With Us. Don't Spam."
+  contact_content_1: "Drop us a line using contact form below"
+  contact_content_2: "Name *"
+  contact_content_3: "E-mail *"
+  contact_content_4: "Subject *"
+  contact_content_5: "Message *"
+  contact_content_6: "We would love to work with you"
+  contact_content_7: "We start with a brief phone or skype call to get to know you, your project, and see how many levels of compatibility we have.If it's a good fit we'll schedule a formal Discovery Meeting where we'll invite you to our offices for a day where we'll scope out your project, discuss design direction, and craft user stories, among other items. After that meeting we'll provide a detailed estimate and project timeline, and get started shortly thereafter."
+  contact_content_8: "8 Ivan Lepse Ave."
+  contact_content_9: "Kiev"
+  contact_content_10: "Ukraine"
+  contact_content_11: "Phone: +38 044 38 44 670 "
+  contact_content_12: "E-mail: master@sitemaster.com.ua"
+  contact_content_13: "Website: www.sitemaster.com.ua"
+  contact_content_14: "SENT"
+  contact_content_15: "......"
+  contact_content_16: "Your message was sent."
+  contact_content_17: "In the near future we will contact you."
+  contact_content_18: "You file"
+  contact_content_19: "UPLOAD"
+  footer_content_1: "We can do more :)"
+  massage_content_1: "Hello:"
+  massage_content_2: "You email:"
+  massage_content_3: "You Subject:"
+  massage_content_4: "You massage:"
+  massage_content_5: "In the near future we will contact you:"
+  massage_content_6: "Attachment File"
+
+

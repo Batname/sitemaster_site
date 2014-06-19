@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sitemaster - Create web & mobile apps</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <link rel="shortcut icon" href="favicon.png"/>
+
+
+  <link href="styleshets/fonts/stylesheet.css" media="screen" rel="stylesheet" type="text/css"/>
+  <link href="styleshets/reset.css" rel="stylesheet" type="text/css"/>
+  <link href="styleshets/site.css" rel="stylesheet" type="text/css"/>
+  <link href="styleshets/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" />
+
+  <!--<script type="text/javascript" src="javascripts/jquery-1.7.2.min.js"></script>-->
+  <script type="text/javascript" src="javascripts/modernizr-2.6.2.min.js"></script>
+  <script type="text/javascript" src="javascripts/code4net.slideshow.js"></script>
+  <script type="text/javascript" src="javascripts/pop-up-mask.js"></script>
+  <script type="text/javascript" src="javascripts/on.scroll.js"></script>
+  <script type="text/javascript" src="javascripts/ajax.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.lightbox-0.5.pack.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+  <script type="text/javascript" src="javascripts/main.js"></script>
+  <!--[if lt IE 10]>
+  <script type="text/javascript" src="js/PIE.js"></script>
+  <![endif]-->
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="description" content="Template by Dry Themes"/>
+  <meta name="keywords" content="HTML, CSS, JavaScript, PHP"/>
+  <meta name="author" content="DryThemes"/>
+
+
+  <link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'/>
+
+</head>
+<body>
+
+
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<div class="navigation-lang">
+  <% if I18n.locale == :en %>
+      <img src="images/navigate-lang.png" alt="navigate_img"/>
+  <% elsif I18n.locale == :ru %>
+      <img src="images/navigate-lang_ru.png" alt="navigate_img"/>
+  <% end %>
+
+  <ul>
+    <li>
+
+      <%= link_to('?locale=en', data: { no_turbolink: true }, class: 'nav-active rounded') do %><span>English</span><% end %>
+      <%= link_to('?locale=ru', data: { no_turbolink: true }, class: 'nav-active rounded') do %><span>Русский</span><% end %>
+    </li>
+  </ul>
+</div>
+<div class="navigation">
+  <% if I18n.locale == :en %>
+      <img src="images/navigate.png" alt="navigate_img"/>
+  <% elsif I18n.locale == :ru %>
+      <img src="images/navigate_ru.png" alt="navigate_img"/>
+  <% end %>
+  <ul>
+    <li>
+      <a href="#take-me-home" class="nav-active rounded"><span><%=t :menu_1 %></span></a>
+    </li>
+    <li>
+      <a href="#about" class="rounded"><span><%=t :menu_2 %></span></a>
+    </li>
+    <li>
+      <a href="#services" class="rounded"><span><%=t :menu_3 %></span></a>
+    </li>
+    <li>
+      <a href="#showcase" class="rounded"><span><%=t :menu_4 %></span></a>
+    </li>
+    <li>
+      <a href="#our-team" class="rounded"><span><%=t :menu_5 %></span></a>
+    </li>
+    <!--<li>
+        <a href="#news" class="rounded"><span>News</span></a>
+    </li> -->
+    <li>
+      <a href="#contact-us" class="rounded"><span><%=t :menu_6 %></span></a>
+    </li>
+  </ul>
+</div>
