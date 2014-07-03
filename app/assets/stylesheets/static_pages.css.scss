@@ -1,3 +1,33 @@
 // Place all the styles related to the Static_Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.ui-state-default {
+  position: fixed;
+  background-image: url(image-path('menu/clouse.png'));
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin-left: 146px;
+  margin-top: 25px;
+  z-index: 1000;
+}
+
+
+.ui-state-default-op {
+  position: fixed;
+  background-image: url(image-path('menu/open.png'));
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin-left: 0px;
+  margin-top: 25px;
+  z-index: 1000;
+}
+
+.toggler-menu {
+  z-index: 1000;
+}

@@ -62,3 +62,19 @@ gem 'remotipart'
 # Плагин для загрузки файлов
 # https://github.com/thoughtbot/paperclip
 gem 'paperclip'
+
+# Эффект для меню
+#gem 'jquery-ui-rails'
+
+# https://github.com/globalize/globalize
+# Модуль для перевода строк в базе данных
+gem 'globalize', '~> 4.0.1'
+
+# Создание записей в базе данных
+gem 'faker', '1.1.2'
+
+# Пароль кодировать
+gem 'bcrypt-ruby', '3.1.2'
+
+# Паджинация
+gem 'will_paginate', '3.0.4'

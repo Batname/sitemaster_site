@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+
+<%=t :massage_content_1 %> <%= @contact_form.name %><br>
+<%=t :massage_content_2 %> <%= @contact_form.email %><br>
+<%=t :massage_content_3 %> <%= @contact_form.subject %><br>
+<%=t :massage_content_4 %> <%= @contact_form.massage %><br><br>
+
+<%=t :massage_content_5 %><br>
+
+<%=t :massage_content_6 if @contact_form.attachment?%> <a href="http://sitemaster.com.ua<%=  @contact_form.attachment.url if @contact_form.attachment? %>"><%= @contact_form.attachment_file_name if @contact_form.attachment? %></a>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<img style="width: 200px;" src="http://sitemaster.com.ua/images/logo/logo_black.png" alt="logo"><br>
+Phone: +38 044 38 44 670<br>
+E-mail: master@sitemaster.com.ua<br>
+Website: www.sitemaster.com.ua<br>
+
+</body>
+</html>

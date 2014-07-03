@@ -1,88 +1,100 @@
-<!--<div class="section news" id="news">
+
+<div class="section news" id="news">
     <div class="container">
         <div class="arrow 05">
-            <img src="images/arrow/arrow_05.png" alt="arrow_05" />
+          <img src="images/arrow/arrow_02.png" alt="arrow_02">
         </div>
         <div class="subheader">
             <div class="subheader-icon"></div>
             <div class="subheader-text">
-                news <span>Read Our Latest News. Stay Informed.</span>
+              <%=t :news_title_1 %> <span><%=t :news_title_2 %></span>
             </div>
             <div class="subheader-separator"></div>
         </div>
-        <div class="column-300 m-top-50 m-right-40">
-            <div class="summary m-bottom-30">
-                Porro quisquam se est setere
-            </div>
-            <p>
-                Mar 26, 2012
-            </p>
-            <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatema accusantium terre estere doloremque laudantium, totames...
-            </p>
-            <a href="#" target="_blank" class="button rounded">read more</a>
-        </div>
-        <div class="column-300 m-top-50 m-right-40">
-            <div class="summary m-bottom-30">
-                Lorem quisquam se est quister
-            </div>
-            <p>
-                Mar 26, 2012
-            </p>
-            <p>
-                Perspiciatis unde omnis iste natus error sit voluptatema accusantium terre estere not doloremque laudantium, lorem est...
-            </p>
-            <a href="#" target="_blank" class="button rounded">read more</a>
-        </div>
-        <div class="column-300 m-top-50">
-            <div class="summary m-bottom-30">
-                Nulla quisquam se est quister
-            </div>
-            <p>
-                Mar 26, 2012
-            </p>
-            <p>
-                Unde omnis iste natus error sit voluptatema accusantium terre estere doloremque laudantium, totames sed...
-            </p>
-            <a href="#" target="_blank" class="button rounded">read more</a>
-        </div>
-        <div class="clear"></div>
-        <div class="column-300 m-top-95 m-right-40">
-            <div class="summary m-bottom-30">
-                Teas porro quisqu amse est done
-            </div>
-            <p>
-                Mar 26, 2012
-            </p>
-            <p>
-                Omnis iste natus error sit voluptatema accusantium terre estere doloremque laudantium, totames sed ut perspiciatis...
-            </p>
-            <a href="#" target="_blank" class="button rounded">read more</a>
-        </div>
-        <div class="column-300 m-top-95 m-right-40">
-            <div class="summary m-bottom-30">
-                Longus quisquam se est perro
-            </div>
-            <p>
-                Mar 26, 2012
-            </p>
-            <p>
-                Voluptatema sed ut perspiciatis unde omnis iste natus error sit accusantium terre estere doloremque laudantium...
-            </p>
-            <a href="#" target="_blank" class="button rounded">read more</a>
-        </div>
-        <div class="column-300 m-top-95">
-            <div class="summary m-bottom-30">
-                Donec quisquam se est lorem
-            </div>
-            <p>
-                Mar 26, 2012
-            </p>
-            <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatema accusantium terre estere doloremque laudantium...
-            </p>
-            <a href="#" target="_blank" class="button rounded">read more</a>
-        </div>
+
+      <% @articles.each do |article| %>
+          <div class="column-300 m-top-50" style="padding-right: 20px">
+            <div class="summary m-bottom-30" style="height: 70px"><%= article.title %></div>
+            <p><%= article.created_at.to_formatted_s(:long_ordinal) %></p>
+            <p style="height: 75px"><%= article.short_description.html_safe  %> </p>
+            <%= link_to_unless_current("#{t :news_content_1}", {controller:'articles' , action: 'show', permalink: article.permalink}, class: "button rounded", style: "left: -25px", data: { no_turbolink: true } ) %>
+          </div>
+      <% end %>
+
+
+        <!--<div class="column-300 m-top-50 m-right-40">-->
+            <!--<div class="summary m-bottom-30">-->
+                <!--Porro quisquam se est setere-->
+            <!--</div>-->
+            <!--<p>-->
+                <!--Mar 26, 2012-->
+            <!--</p>-->
+            <!--<p>-->
+                <!--Sed ut perspiciatis unde omnis iste natus error sit voluptatema accusantium terre estere doloremque laudantium, totames...-->
+            <!--</p>-->
+            <!--<a href="#" target="_blank" class="button rounded">read more</a>-->
+        <!--</div>-->
+        <!--<div class="column-300 m-top-50 ">-->
+            <!--<div class="summary m-bottom-30">-->
+                <!--Lorem quisquam se est quister-->
+            <!--</div>-->
+            <!--<p>-->
+                <!--Mar 26, 2012-->
+            <!--</p>-->
+            <!--<p>-->
+                <!--Perspiciatis unde omnis iste natus error sit voluptatema accusantium terre estere not doloremque laudantium, lorem est...-->
+            <!--</p>-->
+            <!--<a href="#" target="_blank" class="button rounded">read more</a>-->
+        <!--</div>-->
+        <!--<div class="column-300 m-top-50">-->
+            <!--<div class="summary m-bottom-30">-->
+                <!--Nulla quisquam se est quister-->
+            <!--</div>-->
+            <!--<p>-->
+                <!--Mar 26, 2012-->
+            <!--</p>-->
+            <!--<p>-->
+                <!--Unde omnis iste natus error sit voluptatema accusantium terre estere doloremque laudantium, totames sed...-->
+            <!--</p>-->
+            <!--<a href="#" target="_blank" class="button rounded">read more</a>-->
+        <!--</div>-->
+        <!--<div class="clear"></div>-->
+        <!--<div class="column-300 m-top-95 m-right-40">-->
+            <!--<div class="summary m-bottom-30">-->
+                <!--Teas porro quisqu amse est done-->
+            <!--</div>-->
+            <!--<p>-->
+                <!--Mar 26, 2012-->
+            <!--</p>-->
+            <!--<p>-->
+                <!--Omnis iste natus error sit voluptatema accusantium terre estere doloremque laudantium, totames sed ut perspiciatis...-->
+            <!--</p>-->
+            <!--<a href="#" target="_blank" class="button rounded">read more</a>-->
+        <!--</div>-->
+        <!--<div class="column-300 m-top-95 m-right-40">-->
+            <!--<div class="summary m-bottom-30">-->
+                <!--Longus quisquam se est perro-->
+            <!--</div>-->
+            <!--<p>-->
+                <!--Mar 26, 2012-->
+            <!--</p>-->
+            <!--<p>-->
+                <!--Voluptatema sed ut perspiciatis unde omnis iste natus error sit accusantium terre estere doloremque laudantium...-->
+            <!--</p>-->
+            <!--<a href="#" target="_blank" class="button rounded">read more</a>-->
+        <!--</div>-->
+        <!--<div class="column-300 m-top-95">-->
+            <!--<div class="summary m-bottom-30">-->
+                <!--Donec quisquam se est lorem-->
+            <!--</div>-->
+            <!--<p>-->
+                <!--Mar 26, 2012-->
+            <!--</p>-->
+            <!--<p>-->
+                <!--Sed ut perspiciatis unde omnis iste natus error sit voluptatema accusantium terre estere doloremque laudantium...-->
+            <!--</p>-->
+            <!--<a href="#" target="_blank" class="button rounded">read more</a>-->
+        <!--</div>-->
         <div class="clear"></div>
     </div>
-</div>-->
+</div>

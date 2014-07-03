@@ -1,0 +1,39 @@
+<% provide(:title, 'Edit Articles') %>
+
+<div class="section news" id="news">
+  <div class="container">
+    <div class="arrow 05">
+      <%= image_tag("arrow/arrow_01.png", alt: "arrow_01") %>
+    </div>
+    <div class="subheader">
+      <div class="subheader-icon"></div>
+      <div class="subheader-text">
+        Edit Articles <span></span>
+      </div>
+      <div class="subheader-separator"></div>
+      <div class="m-top-50">
+      <%= link_to 'New article', new_article_path %>
+        <br>
+        <br>
+
+        <%= will_paginate %>
+      <table class="table">
+        <% @articles.each do |article| %>
+            <tr>
+              <td><%= article.title %></td>
+              <td><%= truncate(article.text, length: 150)  %></td>
+              <td><%= article.short_description %></td>
+              <td><%= article.permalink %></td>
+              <td><%= link_to_unless_current("Show", {controller:'articles' , action: 'show', permalink: article.permalink}, class: "", style: "", data: { no_turbolink: true } ) %> <td>
+              <td><%= link_to 'Edit', edit_article_path(article) %></td>
+              <td><%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+        <% end %>
+      </table>
+        <%= will_paginate %>
+
+    </div>
+    <div class="clear"></div>
+    </div>
+  </div>
+</div>

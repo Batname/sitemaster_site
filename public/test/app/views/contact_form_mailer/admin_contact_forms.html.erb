@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+
+Hello Admin<br>
+
+You have massage from <%= @contact_form.name %><br>
+User email: <%= @contact_form.email %><br>
+User Subject: <%= @contact_form.subject %><br>
+User massage: <%= @contact_form.massage %><br>
+
+<a href="http://107.170.6.153<%=  @contact_form.attachment.url if @contact_form.attachment? %>"><%= @contact_form.attachment_file_name if @contact_form.attachment? %></a>
+
+</body>
+</html>

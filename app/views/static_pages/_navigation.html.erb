@@ -1,3 +1,4 @@
+<div class="toggler-menu" id="toggler-menu">
 <div class="navigation-lang">
   <% if I18n.locale == :en %>
       <img src="images/navigate-lang.png" alt="navigate_img"/>
@@ -35,11 +36,14 @@
     <li>
       <a href="#our-team" class="rounded"><span><%=t :menu_5 %></span></a>
     </li>
-    <!--<li>
-        <a href="#news" class="rounded"><span>News</span></a>
-    </li> -->
+    <li>
+        <a href="#news" class="rounded"><span><%=t :menu_7 %></span></a>
+    </li>
     <li>
       <a href="#contact-us" class="rounded"><span><%=t :menu_6 %></span></a>
     </li>
   </ul>
 </div>
+</div>
+  <div id="clouse-menu-button" class="ui-state-default" style="display: none"></div>
+  <div id="open-menu-button" class="ui-state-default-op" style="display: none"></div>

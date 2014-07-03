@@ -1,7 +1,14 @@
+<script>
+    $(document).ready(function(){
+        document.getElementById("uploadBtn").onchange = function () {
+            document.getElementById("uploadFile").value = this.value;
+        };
+    });
+</script>
 <div class="section contact-us" id="contact-us">
   <div class="container">
     <div class="arrow 06">
-      <img src="images/arrow/arrow_06.png" alt="arrow_06" />
+      <img src="images/arrow/arrow_05.png" alt="arrow_05">
     </div>
     <div class="subheader">
       <div class="subheader-icon"></div>
@@ -30,13 +37,13 @@
             <%= f.text_area :massage, onkeyup: false %>
             </div>
             <%= f.button  "#{t :contact_content_14}", class: "submit-btn rounded", id: "submit-mail", data: {:'disable-with' => "#{t :contact_content_15}"} %>
-            <input id="uploadFile" placeholder="<%=t :contact_content_18 %>" disabled="disabled" />
-            <div class="fileUpload btn-upload">
-              <%=t :contact_content_19 %>
+
+            <div class="fileUpload" style="height: 46px">
+              <input id="uploadFile" placeholder="<%=t :contact_content_18 %>" disabled="disabled" />
             <%= f.file_field :attachment, class: "upload", id: "uploadBtn" %>
             </div>
-
-
+          <br>
+          <%=t :contact_content_20 %>
       <% end %>
       <div id="mail-message">
         <table>
@@ -77,11 +84,11 @@
       </p>
       <div class="socio_contact m-top-50">
         <ul>
-          <li><a href="#" target="_blank" class="socio_contact_twitter"></a></li>
-          <li><a href="#" target="_blank" class="socio_contact_facebook"></a></li>
-          <li><a href="#" target="_blank" class="socio_contact_dribbble"></a></li>
-          <li><a href="#" target="_blank" class="socio_contact_behance"></a></li>
-          <li class="last"><a href="#" target="_blank" class="socio_contact_flickr"></a></li>
+          <li><a href="https://twitter.com/Sitemaster_Dev" target="_blank" class="socio_contact_twitter"></a></li>
+          <li><a href="https://www.facebook.com/sitemaster.development" target="_blank" class="socio_contact_facebook"></a></li>
+          <li><a href="http://vk.com/sitemas_com_ua_development" target="_blank" class="socio_contact_vk"></a></li>
+          <li><a href="https://www.linkedin.com/groups/Sitemaster-Create-web-mobile-app-7469623" target="_blank" class="socio_contact_in"></a></li>
+          <li><a href="https://plus.google.com/117461570487313641572" rel="publisher" target="_blank" class="socio_contact_google"></a></li>
         </ul>
       </div>
     </div>

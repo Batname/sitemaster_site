@@ -1,0 +1,112 @@
+ru:
+  activerecord:
+    attributes:
+      contact_form:
+        email: ""
+        name: "Name"
+        massage: "Massage"
+    errors:
+      models:
+        contact_form:
+          attributes:
+            email:
+              blank: ""
+              taken: ""
+              invalid: ""
+            name:
+              blank: "должна быть в диапазоне от 1 до 7 включительно"
+            massage:
+              too_long:
+               one: "is too long (maximum is 1 character)"
+               other: "is too long (maximum is %{count} characters)"
+              too_short:
+               one: "is too short (minimum is 1 character)"
+               other: "is too short (minimum is %{count} characters)"
+            name:
+              too_long:
+               one: "is too long (maximum is 1 character)"
+               other: "is too long (maximum is %{count} characters)"
+              too_short:
+               one: "is too short (minimum is 1 character)"
+               other: "is too short (minimum is %{count} characters)"
+  menu_1: "Домой"
+  menu_2: "О Нас"
+  menu_3: "Услуги"
+  menu_4: "Портфолио"
+  menu_5: "Команда"
+  menu_6: "Контакты"
+  about_title_1: "о нас"
+  about_title_2: "Кто мы. Узнайте нас лучше."
+  about_content_1: "Мы специализируемся на разработке веб и мобильных приложений. Мы разрабатываем на основе Ruby, Php, Java, Objective-C."
+  about_content_2: "Мы создаем проекты весело и вместе."
+  about_content_3: "Хорошая работа всегда заслуживает внимания, это значит что мы всегда проверяем и тестируем наши проекты.
+                    Мы делаем полностью прозрачным творческий процесс разработчиков и дизайнеров."
+  about_content_4: "Мы всегда стараемся избежать неожиданностей во время выполнения проекта.
+                    Для этого мы часто общаемся с клиентами для определения точных потребностей, что бы успешно работать вместе."
+  about_content_5: "Веб-проект - это личность в Интернете.
+                    Вы можете получить хорошую визуализацию потратить большое количество времени, а после потребности Рынка вырастут.
+                    Мы знаем цену успешного развития, и именно поэтому мы всегда думает о будущих возможностях.
+                    Наша команда высоко мотивирована и мы всегда ищем возможности для обучения.
+                    Мы отлично разбираемся в современных языках программирования, наши разработчики отлично решают проблемы и предотвращают последствия."
+  services_title_1: "sitemaster"
+  services_title_2: "Что мы делаем. Все наши услуги."
+  services_content_1: "Мы дизайнеры и разработчики. Мы делаем невероятные вещи для веб-проектов."
+  services_content_2: "Мы специализируемся на разработке веб-приложений используя open-source технологии такие, как Ruby on Rails, Php, Java, и самые используемые стандарты JavaScript библиотек таких, как jQuery."
+  services_content_3: "РАЗРАБОТКА WEB ПРИЛОЖЕНИЙ"
+  services_content_4: "Php, Ryby on Rails Разработка. Создание HTML5 и CSS3 макетов. Web анимация JavaScript & Jquery. Мобильный web дизайн."
+  services_content_5: "РАЗРАБОТКА МОБИЛЬНЫХ ПРИЛОЖЕНИЙ"
+  services_content_6: "Создание iOS приложений для iPhone и iPad мобильных устройств. Создание android мобильных приложений."
+  services_content_7: "MAGENTO И WORDPRESS РАЗРАБОТКА"
+  services_content_8: "Разработка интернет магазинов на популярной CMS - Magento. Создание корпоративных, новостных сайтов - Wordpress CMS."
+  services_content_9: "ДРУГИЕ УСЛУГИ"
+  services_content_10: "Разработка для социальных сетей (facebook, vkontakte). Поддержка сайтов и приложений, хостинг. Сео оптимизация."
+  showcase_title_1: "портфолио"
+  showcase_title_2: "Посмотрите наше портфолио."
+  showcase_content_1: "Последовательность наших работ >> Исследование >> Дизайн >> Разработка >> Развёртывание!"
+  showcase_content_2: "Причина работы с нами, то что по завершению вы получите успешный проект.
+                      Мы не только профессиональные дизайнеры и опытные разработчики, мы так же любим создавать нечто новое."
+  team_title_1: "команда sitemaster"
+  team_title_2: "Знакомьтесь с нашей командой."
+  team_content_1: "Мы на равных работаем в отличной команде. Вместе совершенствуем наши навыки, развлекаемся и решаем новые задачи."
+  team_content_2: "Мы стараемся по максимуму понимать идеи и потребности вашего проекта. Мы хотим наилучшим образом создать приложение для Вас."
+  team_content_3: "Сергей Полищук"
+  team_content_4: "Front-End Разработчик"
+  team_content_5: "Дубинин Денис"
+  team_content_6: "Основатель"
+  team_content_7: "Андрей Нечаев"
+  team_content_8: "Разработчик"
+  contact_title_1: "контакты"
+  contact_title_2: "Будь с нами на связи, не спамь."
+  contact_content_1: "Используйте контактную форму"
+  contact_content_2: "Имя *"
+  contact_content_3: "E-mail *"
+  contact_content_4: "Заголовок *"
+  contact_content_5: "Сообщение *"
+  contact_content_6: "Мы всегда рады работать с вами."
+  contact_content_7: "Начало работы начинается с краткого телефонного или Skype звонка, чтобы познакомиться с Вами, и Вашим проектом, чтобы увидеть, сколько понять Ваши идеи и потребности.
+                      Далее мы планируем официальное исследовательское совещание, проводим с Вами дополнительные переговоры для совместного обсуждения дизайна и функциональности проекта.
+                      После детальной дискуссии мы представим подробную смету и график реализации проекта, а затем мы приступим к работе."
+  contact_content_8: "бульвар Ивана Лепсе 8"
+  contact_content_9: "Киев"
+  contact_content_10: "Украина"
+  contact_content_11: "Телефон: +38 044 38 44 670 "
+  contact_content_12: "E-mail: master@sitemaster.com.ua"
+  contact_content_13: "Website: www.sitemaster.com.ua"
+  contact_content_14: "ОТПР."
+  contact_content_15: "......"
+  contact_content_16: "Ваше сообщение отправлено."
+  contact_content_17: "В ближайшее время мы с Вами свяжемся."
+  contact_content_18: "Нажмите для загрузки файла"
+  contact_content_19: "ЗАГРУЗ."
+  contact_content_20: "Приложения: Только изображение, файл word или excel, pdf файл."
+  footer_content_1: "Мы можем больше :)"
+  massage_content_1: "Привет:"
+  massage_content_2: "Ваш email:"
+  massage_content_3: "Ваша тема:"
+  massage_content_4: "Ваше сообщение:"
+  massage_content_5: "В ближайшее время мы с Вами свяжемся:"
+  massage_content_6: "Прикрепленный файл"
+
+
+
+
