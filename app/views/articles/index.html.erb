@@ -24,6 +24,7 @@
               <td><%= truncate(article.text, length: 150)  %></td>
               <td><%= article.short_description %></td>
               <td><%= article.permalink %></td>
+              <td class="article-image"><%= image_tag article.attachment.url %></td>
               <td><%= link_to_unless_current("Show", {controller:'articles' , action: 'show', permalink: article.permalink}, class: "", style: "", data: { no_turbolink: true } ) %> <td>
               <td><%= link_to 'Edit', edit_article_path(article) %></td>
               <td><%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' } %></td>

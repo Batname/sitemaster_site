@@ -1,3 +1,10 @@
+<script>
+    $(document).ready(function(){
+        document.getElementById("uploadBtn").onchange = function () {
+            document.getElementById("uploadFile").value = this.value;
+        };
+    });
+</script>
 <%= form_for @article do |f| %>
     <% if @article.errors.any? %>
         <div id="error_explanation">
@@ -42,4 +49,9 @@
     <p>
       <%= f.submit "Submit" , class: "submit-btn rounded", style: "float: left", id: "submit-mail", data: {:'disable-with' => "#{t :contact_content_15}"} %>
     </p>
+
+    <div class="fileUpload" style="height: 46px">
+    <input id="uploadFile" placeholder="<%=t :contact_content_18 %>" disabled="disabled" />
+    <%= f.file_field :attachment, class: "upload", id: "uploadBtn" %>
+    </div>
 <% end %>

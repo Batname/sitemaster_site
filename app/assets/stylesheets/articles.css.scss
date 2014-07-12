@@ -1,4 +1,4 @@
-// Place all the styles related to the Articles controller here.
+ // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
@@ -235,4 +235,12 @@ table th[class*="col-"] {
   .table-responsive > .table-bordered > tfoot > tr:last-child > td {
     border-bottom: 0;
   }
+}
+.article-image img {
+  width: 60px;
+}
+.content-image img {
+  width: 450px;
+  float: left;
+  margin: 0px 30px 10px 0px;
 }

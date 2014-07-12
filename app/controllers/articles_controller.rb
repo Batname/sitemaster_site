@@ -58,7 +58,7 @@ class ArticlesController < ApplicationController
 
   private
   def article_params
-    params.require(:article).permit(:title, :text, :permalink, :short_description, :position, :visible, :image)
+    params.require(:article).permit(:title, :text, :permalink, :short_description, :position, :visible, :image, :attachment)
   end
 
   # Before filters

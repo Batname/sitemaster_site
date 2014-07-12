@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150714205354) do
+ActiveRecord::Schema.define(version: 20150714205355) do
 
   create_table "article_translations", force: true do |t|
     t.integer  "article_id",        null: false
@@ -36,6 +36,10 @@ ActiveRecord::Schema.define(version: 20150714205354) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "short_description"
+    t.string   "attachment_file_name"
+    t.string   "attachment_content_type"
+    t.integer  "attachment_file_size"
+    t.datetime "attachment_updated_at"
   end
 
   create_table "contact_forms", force: true do |t|

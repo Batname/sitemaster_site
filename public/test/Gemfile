@@ -69,5 +69,10 @@ gem 'globalize', '~> 4.0.1'
 # Создание записей в базе данных
 group :development do
 gem 'faker', '1.1.2'
-  end
+end
 
+# Пароль кодировать
+gem 'bcrypt-ruby', '3.1.2'
+
+# Паджинация
+gem 'will_paginate', '3.0.4'

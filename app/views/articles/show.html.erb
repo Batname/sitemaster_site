@@ -14,6 +14,9 @@
       <div class="subheader-separator"></div>
     </div>
     <div class="m-top-50">
+      <% if @article.attachment? %>
+      <div class="content-image"><%= image_tag @article.attachment.url %></div>
+      <%end %>
     <div class="test"><%= @article.text.html_safe %></div>
     <% if signed_in? && current_user.admin? && !current_user?(@users) %>
     <%= link_to 'Back', articles_path %>
