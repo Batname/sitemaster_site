@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  root 'static_pages#home'
+  # root 'static_pages#home'
+  root :to => 'static_pages#home', id: 'home'
 
   get 'service/:permalink', :to => 'services#show'
   get 'project/:permalink', :to => 'projects#show'
@@ -24,6 +25,8 @@ Rails.application.routes.draw do
   match '/edit_services',  to: 'services#index',         via: 'get'
   match '/edit_projects',  to: 'projects#index',         via: 'get'
   match '/edit_news',  to: 'articles#index',         via: 'get'
+
+  match '/mailler/unsubscribe',  to: 'services#unsubscribe',            via: 'get'
 
 
 end
