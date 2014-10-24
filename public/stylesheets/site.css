@@ -6,6 +6,7 @@ body {
 	font-size: 13px;
 	line-height: 25px;
 	color: #ffffff;
+    background: url(../images/bg_footer.png) repeat scroll 0 0 transparent;
 }
 .doc-loader
 {
@@ -49,9 +50,14 @@ a:active
 	width: 100%;
 	height: 1100px;
 }
+
+.top-header {
+    width: 100%;
+    background: url(../images/bg_tophead.png) repeat scroll 0 0 transparent;
+}
 .first-section
 {
-	height: 710px;
+	height: 450px;
 }
 .showcase
 {
@@ -72,6 +78,41 @@ a:active
 	width: 100%;
 	padding-top: 70px;
 }
+
+.inner-container:after {
+    clear: both;
+}
+
+.inner-container:before, .inner-container:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearer:after {
+    display: block;
+    content: ".";
+    clear: both;
+    font-size: 0px;
+    line-height: 0;
+    height: 0px;
+    overflow: hidden;
+}
+
+/******************************************************************************/
+/*  Top Header                                                                 */
+/******************************************************************************/
+
+.top-header .item-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.top-header .item-right {
+    float: right;
+    margin-left: 20px;
+}
+
 
 /******************************************************************************/
 /*  SUBHEADER                                                                 */
@@ -135,7 +176,7 @@ a:active
 .navigation
 {
     position: fixed;
-    top: 225px;
+    top: 150px;
 	left: 0px;
 	z-index: 200;
 }
@@ -344,14 +385,15 @@ a:active
 /******************************************************************************/
 /*  BACKGROUND                                                                */
 /******************************************************************************/
-.first-section {background: #1f1f1f url(../images/top_bg/top_bg.png) repeat-x;}
+.first-section {background: url(../images/banner_home.jpg) repeat scroll 0 0 transparent;}
 .head-section {background: #1f1f1f url(../images/top_bg/top_bg.png) repeat-x; height: 290px;}
-.about {background-color: #d82545;}
-.services {background-color: #feac58;}
-.showcase {background-color: #273c67;}
-.our-team {background-color: #D82545;}
-.news {background-color: #BAB932;}
-.contact-us {background-color: #1e1e1e;}
+.about {background: url(../images/bg_about.png) repeat scroll 0 0 transparent;}
+.services {background: url(../images/bg_content.png) repeat scroll 0 0 transparent;}
+.showcase {background-color: #ffffff;}
+.our-team {background: url(../images/bg_content.png) repeat scroll 0 0 transparent;}
+.news {background-color: #ffffff;}
+.contact-us {background: url(../images/bg_contact.png) repeat scroll 0 0 transparent;}
+.footer, .scripts {background: url(../images/bg_footer.png) repeat scroll 0 0 transparent;}
 
 /******************************************************************************/
 /*  HEADER                                                                    */
@@ -366,13 +408,15 @@ a:active
     width: 100%;
     height: 180px;
     margin: 0 auto;
-	padding-top: 60px;
+	padding-top: 30px;
 }
 .logo
 {
-    width: 774px;
-    height: 180px;
-	margin: 0 auto;
+
+}
+
+.top-header .logo img {
+    padding: 5px 0;
 }
 
 /******************************************************************************/
@@ -388,6 +432,7 @@ a:active
     width: 980px;
     height: 400px;
     overflow: hidden;
+    padding-top: 30px;
 }
 .gallery-slide-first
 {
@@ -819,7 +864,7 @@ a.socio_contact_flickr {background: transparent url('../images/socio/contact_fli
 	width: 100%;
     padding-top: 20px;
     text-align: center;
-	color: #1e1e1e;
+	color: #ffffff;
 }
 .footer_logo img
 {

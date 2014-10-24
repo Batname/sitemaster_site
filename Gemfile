@@ -78,3 +78,7 @@ gem 'bcrypt-ruby', '3.1.2'
 
 # Паджинация
 gem 'will_paginate', '3.0.4'
+
+# Bootstrap for Sass https://github.com/twbs/bootstrap-sass
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
