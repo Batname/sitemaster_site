@@ -57,7 +57,7 @@ a:active
 }
 .first-section
 {
-	height: 450px;
+	height: 400px;
 }
 .showcase
 {
@@ -119,7 +119,7 @@ a:active
 /******************************************************************************/
 .subheader
 {
-	margin-top: 70px;
+	margin-top: 30px;
 }
 .subheader-icon
 {
@@ -137,7 +137,17 @@ a:active
 	font-size: 55px;
 	letter-spacing: -0.04em;
 	vertical-align: middle;
+    color: #31302b;
 }
+
+.contact-us .subheader-text {
+    color: #ffffff;
+}
+
+.contact-us .subheader-icon {
+    background: transparent url(../images/subheader/icon_plus_f.png) no-repeat;
+}
+
 .subheader-text span
 {
 	display: inline-block;
@@ -150,7 +160,8 @@ a:active
 {
 	width: 980px;
 	height: 30px;
-	margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 	background: transparent url(../images/subheader/separator.png) no-repeat;
 }
 
@@ -198,8 +209,8 @@ a:active
 	display: inline-block;
     padding: 0.3em .5em 0.3em;
     text-decoration: none;
-	background-color: #ffffff;
-	color: #888887;
+    background: url(../images/bg_left_menu.png) repeat scroll 0 0 transparent;
+	color: #ffffff;
 	-moz-border-radius: 0 .4em .4em 0;  /* Firefox */
 	-webkit-border-radius: 0 .4em .4em 0; /* Safari, Chrome */
 	border-radius: 0 .4em .4em 0; /* CSS3 */
@@ -208,12 +219,12 @@ a:active
 }
 .navigation a.nav-active
 {
-	color:#d82445;
+	color:#c14800;
 }
 .navigation a:hover
 {
 	background-color: #ffffff;
-	color:#d82545;
+	color:#c14800;
 }
 .navigation span
 {
@@ -363,11 +374,11 @@ a:active
 	line-height: 40px;
 	letter-spacing: -0.02em;
 }
-.about .summary, .news .summary {color: #6C1E2C;}
-.services .summary {color: #553c21;}
+.about .summary, .news .summary {color: #31302b;}
+.services .summary, .services p {color: #31302b;}
 .showcase .summary {color: #8c9fc5;}
-.news .summary {color: #686716;}
-.contact-us .summary {color: #555555;}
+.news .summary, .news p {color: #31302b;}
+.contact-us .summary {color: #ffffff;}
 .team-member-name
 {
 	font-size: 25px;
@@ -387,12 +398,12 @@ a:active
 /******************************************************************************/
 .first-section {background: url(../images/banner_home.jpg) repeat scroll 0 0 transparent;}
 .head-section {background: #1f1f1f url(../images/top_bg/top_bg.png) repeat-x; height: 290px;}
-.about {background: url(../images/bg_about.png) repeat scroll 0 0 transparent;}
+.about {background: url(../images/bg_about.png) repeat scroll 0 0 transparent; height: 900px;}
 .services {background: url(../images/bg_content.png) repeat scroll 0 0 transparent;}
 .showcase {background-color: #ffffff;}
 .our-team {background: url(../images/bg_content.png) repeat scroll 0 0 transparent;}
 .news {background-color: #ffffff;}
-.contact-us {background: url(../images/bg_contact.png) repeat scroll 0 0 transparent;}
+.contact-us {background: url(../images/bg_contact.png) repeat scroll 0 0 transparent; height: 900px;}
 .footer, .scripts {background: url(../images/bg_footer.png) repeat scroll 0 0 transparent;}
 
 /******************************************************************************/
@@ -432,7 +443,7 @@ a:active
     width: 980px;
     height: 400px;
     overflow: hidden;
-    padding-top: 30px;
+    padding-top: 0;
 }
 .gallery-slide-first
 {
@@ -447,7 +458,7 @@ a:active
 #gallery-nav
 {
 	position: relative;
-	top: -25px;
+	top: -30px;
 	margin: 0 auto;
     text-align: center;
 }
@@ -457,14 +468,14 @@ a:active
 	width: 75px;
 	height: 7px;
 	margin-right: 10px;
-	background-color: #3c3c3c;
+	background-color: #31302b;
 	border: none;
 	outline: none;
 	cursor: pointer;
 }
 #gallery-nav a.gallery-nav-active
 {
-	background-color: #e41f3a;
+	background-color: #c14800;
 }
 
 /******************************************************************************/
@@ -551,7 +562,7 @@ a.socio_linkedin {background: transparent url('../images/socio/contact_dribbble_
 }
 .m-top-50
 {
-    margin-top: 50px;
+    /*margin-top: 50px;*/
 }
 .m-top-55
 {
@@ -862,7 +873,7 @@ a.socio_contact_flickr {background: transparent url('../images/socio/contact_fli
 .footer
 {
 	width: 100%;
-    padding-top: 20px;
+    padding: 20px 0;
     text-align: center;
 	color: #ffffff;
 }
