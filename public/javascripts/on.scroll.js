@@ -8,7 +8,7 @@ var sectionAnchorClass = 'section';
 var visibleFromBottom = 100; //how m
 var scrollLock = false;
 var sections = [];
-var sectionsCount = 0;         
+var sectionsCount = 0;
 
 function setActiveNavItem(itemId){
 	$('.'+ navClass +' a').toggleClass(activeNavItemClass, false);
@@ -25,12 +25,12 @@ var Section = function(_id, _top){
 
 var markNav = (function() {
 	if(!scrollLock){
-		var position = $(window).scrollTop();		
+		var position = $(window).scrollTop();
 		if(position == 0){
 			setActiveNavItem(sections[0].id);
 			return true;
 		}
-		var i = 0;		
+		var i = 0;
 		while(i < sectionsCount-1 && ((sections[i+1].top - position) < ($(window).height() - visibleFromBottom)) )
 		{
 			i++;
@@ -63,13 +63,13 @@ $(document).ready(function() {
 			var position = $('div#' + itemId).position();
 			$('html,body').animate(
 				{ scrollTop: position.top+'px' },
-				1000, 
+				1000,
 				function() {
 					scrollLock = false;
 					setActiveNavItem(itemId);
-				}	
+				}
 			);
-			
+
 		});
 	});
 });

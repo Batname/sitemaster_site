@@ -20,7 +20,9 @@
   <%= javascript_include_tag 'modernizr-2.6.2.min.js' %>
   <%= javascript_include_tag 'code4net.slideshow.js' %>
   <%= javascript_include_tag 'pop-up-mask.js' %>
-  <%= javascript_include_tag 'on.scroll.js' %>
+  <% if current_page?('/')  %>
+      <%= javascript_include_tag 'on.scroll.js' %>
+  <% end %>
   <%= javascript_include_tag 'ajax.js' %>
   <%= javascript_include_tag 'jquery.lightbox-0.5.pack.js' %>
   <%= javascript_include_tag 'script.js' %>

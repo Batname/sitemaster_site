@@ -8,6 +8,17 @@
   max-width: none !important;
 }
 
+a {
+  color: #EF672F;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover
+{
+  color: #C14800;
+}
+
 .float-left {
   float: left;
 }
@@ -134,4 +145,30 @@
 
 .top-header .flags {
   padding-top: 28px;
+}
+
+.pagination > .active > a, .pagination > .active > a:hover,
+.pagination > .active > a:focus, .pagination > .active > span,
+.pagination > .active > span:hover, .pagination > .active > span:focus {
+  z-index: 2;
+  color: #FFF;
+  background-color: #C14800;
+  border-color: #C14800;
+  cursor: default;
+}
+
+.pagination > li > a, .pagination > li > span {
+  color: #31302B;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  margin-left: -1px;
+}
+
+.pagination > li > a:hover,
+.pagination > li > a:focus,
+.pagination > li > span:hover,
+.pagination > li > span:focus {
+  color: #C14800;
+  background-color: #EEE;
+  border-color: #DDD;
 }

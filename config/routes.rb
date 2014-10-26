@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   match '/edit_services',  to: 'services#index',         via: 'get'
   match '/edit_projects',  to: 'projects#index',         via: 'get'
   match '/edit_news',  to: 'articles#index',         via: 'get'
+  match '/blog',  to: 'articles#index',         via: 'get'
 
   match '/mailler/unsubscribe',  to: 'services#unsubscribe',            via: 'get'
 

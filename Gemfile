@@ -82,3 +82,6 @@ gem 'will_paginate', '3.0.4'
 # Bootstrap for Sass https://github.com/twbs/bootstrap-sass
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
+
+# https://github.com/bootstrap-ruby/will_paginate-bootstrap
+gem 'will_paginate-bootstrap'

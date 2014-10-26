@@ -11,7 +11,7 @@ class Article < ActiveRecord::Base
   validates_length_of :permalink, :within => 3..255
   # use presence_of with length_of to disallow spaces
   validates_uniqueness_of :permalink
-  validates :short_description, presence: true, length: { maximum: 300 }
+  validates :short_description, presence: true, length: { maximum: 1000 }
 
 
   scope :visible, lambda { where(:visible => true) }

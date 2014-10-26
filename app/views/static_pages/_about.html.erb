@@ -80,13 +80,15 @@
       <h3>BLOG POSTS</h3>
       <ul class="blog">
         <li>
-          <h4><a href="http://www.promodo.com/blog/friday-catch-giants-google-facebook">The Friday Catch-Up: The Giants; Google and Facebook are at it Again!</a></h4>
-          <p>Hello Everybody! Today is our 100th Friday catch-up! We take pride in bringing you the most happening latest news and trends on the internet and value our loyal readers, so this is to say thank you for making this 100th edition possible. Way to go guys, we couldn’t have done it without you! Before we get too sentimental, let’s take a look at what the giants are cooking this week. Google and Facebook seem to be trending on the internet a lot lately, and we have been fishing for all the details. Let’s roll!  <%= link_to "this news", '/article/magento-development', class: "rounded", data: {no_turbolink: true} %> </p>
-          <p class="posted"><span>2014-10-24</span></p>
+          <%= @last_article.title %>
+          <%= truncate(@last_article.text.html_safe, length: 650) %>
+          <%= link_to_unless_current("#{t :news_content_1}", {controller:'articles' , action: 'show', permalink: @last_article.permalink}, class: "button rounded", style: "left: -25px", data: { no_turbolink: true } ) %>
+          <p><%= @last_article.created_at.to_formatted_s(:long_ordinal) %></p>
         </li>
       </ul>
 
-      <div class="more"><a href="http://www.promodo.com/blog/">Read all blog posts</a></div>
+     <%= link_to  blog_path, class: "rounded", data: {no_turbolink: true} do %><span>All news</span><% end %>
+
       </p>
     </div>
       <div class="col-xs-3">

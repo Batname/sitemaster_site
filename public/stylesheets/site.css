@@ -37,7 +37,7 @@ a:hover,
 a:active
 {
     text-decoration: none;
-    color: #ffffff;
+    color: #C14800;
     border: none;
     outline: none;
 }
@@ -412,7 +412,7 @@ a:active
 .news {background-color: #ffffff;}
 .contact-us {background: url(../images/bg_contact.png) repeat scroll 0 0 transparent; height: 754px;}
 .footer, .scripts {background: url(../images/bg_footer.png) repeat scroll 0 0 transparent;}
-.main-content {background: url(../images/bg_content.png) repeat scroll 0 0 transparent; height: 750px;}
+.main-content {background: url(../images/bg_content.png) repeat scroll 0 0 transparent; min-height: 750px;padding-bottom: 20px }
 
 /******************************************************************************/
 /*  HEADER                                                                    */
@@ -794,7 +794,7 @@ span.roll
 	display: inline-block;
 	padding: .3em 1.8em .3em;
 	text-decoration: none;
-	background-color: #ac1f39;
+	background-color: #EF672F;
 	color: #ffffff;
 	-moz-border-radius: .5em; /* Firefox */
 	-webkit-border-radius: .5em; /* Safari, Chrome */
@@ -806,7 +806,7 @@ span.roll
 .mail-message-btn:hover
 {
 	text-decoration: none;
-	background-color: #b52540;
+	background-color: #C14800;
 }
 
 #mail-message
@@ -824,13 +824,14 @@ span.roll
     width: 100%;
     height: 100%;
     text-align: center;
+    color: #ffffff;
 }
 #mail-message-window
 {
     width: 400px;
 	padding-bottom: 20px;
     border: solid 0px #ffffff;
-    background: #000000 url('../images/bg.png') repeat top left;
+    background: url(../images/bg_contact.png) repeat scroll 0 0 transparent;
 	margin: 0 auto;
 }
 #mail-message-header

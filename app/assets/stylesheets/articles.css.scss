@@ -237,7 +237,9 @@ table th[class*="col-"] {
   }
 }
 .article-image img {
-  width: 60px;
+  width: 200px;
+  float: left;
+  margin: 0px 30px 10px 0px;
 }
 .content-image img {
   width: 450px;
