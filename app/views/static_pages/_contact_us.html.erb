@@ -18,7 +18,7 @@
       <div class="subheader-separator"></div>
     </div>
     <div class="row">
-    <div class="col-xs-6 column-340  m-top-50 m-right-115 contact-form contact-us-x">
+    <div class="col-xs-4 column-340  m-top-50 m-right-115 contact-form contact-us-x">
       <div class="column-340">
         <div class="summary m-bottom-40">
           <%=t :contact_content_1 %>
@@ -26,43 +26,9 @@
         <p class="m-bottom-22"></p>
       </div>
       <div class="clear"></div>
-      <%= form_for :contact_form, :url => url_for(:controller => 'contact_forms', :action => 'create'), :html => {:id => 'new_contact_form', :class => 'new_contact_form'}, remote: true do |f| %>
-            <label for="name"><%=t :contact_content_2 %></label>
-            <%= f.text_field :name, onkeyup: false %>
-            <label for="name"><%=t :contact_content_3 %></label>
-            <%= f.text_field :email, onkeyup: false %>
-            <label for="name"><%=t :contact_content_4 %></label>
-            <%= f.text_field :subject, onkeyup: false %>
-            <div class="massage-text-field">
-            <label for="name"><%=t :contact_content_5 %></label>
-            <%= f.text_area :massage, onkeyup: false %>
-            </div>
-            <%= f.button  "#{t :contact_content_14}", class: "submit-btn rounded", id: "submit-mail", data: {:'disable-with' => "#{t :contact_content_15}"} %>
-
-            <div class="fileUpload" style="height: 46px">
-              <input id="uploadFile" placeholder="<%=t :contact_content_18 %>" disabled="disabled" />
-            <%= f.file_field :attachment, class: "upload", id: "uploadBtn" %>
-            </div>
-          <br>
-          <%=t :contact_content_20 %>
-      <% end %>
-      <div id="mail-message">
-        <table>
-          <tr>
-            <td>
-              <div id="mail-message-window">
-                <div class="mail-message-error" id="mail-message-header"></div>
-                <div class="team-member-name  m-bottom-10" id="mail-failure"><%=t :contact_content_16 %></div>
-                <p style="text-align: center" id="invalid-email"><%=t :contact_content_17 %></p>
-                <p style="text-align: center" id="footermail-success">&copy;<%= Date.today.year %> Sitemaster - <%=t :footer_content_1 %></p>
-                <input type="button" id="mail-message-btn" class="mail-message-btn rounded" value="OK" />
-              </div>
-            </td>
-          </tr>
-        </table>
-      </div>
+      <%= render 'shared/contact_form'%>
     </div>
-    <div class="column-525 m-top-50">
+    <div class="col-xs-8 column-525 m-top-50">
       <div class="summary m-bottom-40">
         <%=t :contact_content_6 %>
       </div>

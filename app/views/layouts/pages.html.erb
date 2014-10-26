@@ -24,6 +24,7 @@
   <%= javascript_include_tag 'jquery.lightbox-0.5.pack.js' %>
   <%= javascript_include_tag 'script.js' %>
   <%= javascript_include_tag 'main.js' %>
+  <%= render "layouts/javascript/validate" %>
 
   <!--[if lt IE 10]>
   <script type="text/javascript" src="js/PIE.js"></script>
@@ -40,12 +41,22 @@
 </head>
 <body>
 <%= render "layouts/loader" %>
-<%= render "layouts/menu" %>
+<%= render "layouts/general/navigation" %>
 <div id="scrollable">
-<%= render "layouts/header" %>
-  <%= yield %>
-<%= render "layouts/footer" %>
-<%= render "layouts/analitics"%>
+  <%= render 'layouts/general/topheadermenu' %>
+  <%= render 'layouts/general/topheader' %>
+
+  <div class="section main-content">
+  <div class="container">
+  <div class="row">
+    <div class="col-xs-9"> <%= yield %></div>
+    <div class="col-xs-3"><%= render 'layouts/sitebar/contact_form'%></div>
+  </div>
+  </div>
+  </div>
+  <%= render "layouts/general/footermenu" %>
+  <%= render "layouts/general/footer" %>
+  <%= render "layouts/analitics" %>
 
 </div>
 

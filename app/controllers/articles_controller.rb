@@ -1,5 +1,7 @@
 class ArticlesController < ApplicationController
-  layout "pages"
+
+
+  layout :determine_layout
 
   before_action :sign_in, only: [:new, :edit, :update, :destroy]
   before_action :is_admin, only: [:new, :edit, :update, :destroy]
@@ -72,6 +74,14 @@ class ArticlesController < ApplicationController
    redirect_to users_url, notice: "You are not have permission "
   end
 
+  end
+
+  def determine_layout
+    if signed_in? && params[:action] != 'show'
+      "admin"
+    else
+      "pages"
+    end
   end
 
 end

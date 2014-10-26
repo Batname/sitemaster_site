@@ -3,25 +3,19 @@
 
 
 
-<div class="section showcase" id="showcase">
-  <div class="container">
-    <div class="arrow 03">
-      <%= image_tag("arrow/arrow_01.png", alt: "arrow_01") %>
-    </div>
-    <div class="subheader">
-      <div class="subheader-icon"></div>
-      <div class="subheader-text">
-        <%=t :showcase_title_1 %> <span><%= @project.title %></span>
-      </div>
-      <div class="subheader-separator"></div>
-    </div>
-    <div class="m-top-50">
-      <div class="test"><%= @project.text.html_safe %></div>
-      <% if signed_in? && current_user.admin? && !current_user?(@users) %>
-          <%= link_to 'Back', projects_path %>
-          | <%= link_to 'Edit', edit_project_path(@project) %>
-      <% end %>
-      <div class="clear"></div>
-    </div>
+
+<div class="subheader">
+  <div class="subheader-icon"></div>
+  <div class="subheader-text">
+    <%= t :showcase_title_1 %> <span><%= @project.title %></span>
   </div>
+  <div class="subheader-separator"></div>
+</div>
+<div class="m-top-50">
+  <div class="test"><%= @project.text.html_safe %></div>
+  <% if signed_in? && current_user.admin? && !current_user?(@users) %>
+      <%= link_to 'Back', projects_path %>
+      | <%= link_to 'Edit', edit_project_path(@project) %>
+  <% end %>
+  <div class="clear"></div>
 </div>

@@ -3,7 +3,9 @@
     <div class="row">
       <div class="col-xs-3">
         <div class="logo top-header-logo item-left">
-          <img src="images/logo/logo.png" alt="logo"/>
+          <%= link_to(root_path, data: {no_turbolink: true}) do %>
+          <%= image_tag("logo/logo.png") %>
+          <% end %>
         </div>
       </div>
       <div class="col-xs-6">

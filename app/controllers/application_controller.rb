@@ -7,6 +7,8 @@ class ApplicationController < ActionController::Base
 
   include SessionsHelper
 
+  helper_method :home_uri
+
   def validator(object)
     object.valid?
     model = object.class.name.underscore.to_sym
@@ -19,6 +21,10 @@ class ApplicationController < ActionController::Base
       name = t("activerecord.attributes.#{model}.#{field}")
       @errors.map! { |e| "#{name} #{e}" }
     end
+  end
+
+  def home_uri
+    'http://localhost:3000/'
   end
 
   private

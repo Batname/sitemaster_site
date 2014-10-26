@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Sitemaster - Create web & mobile apps</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
@@ -12,7 +12,7 @@
   <link href="stylesheets/fonts/stylesheet.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href="stylesheets/reset.css" rel="stylesheet" type="text/css"/>
   <link href="stylesheets/site.css" rel="stylesheet" type="text/css"/>
-  <link href="stylesheets/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css"/>
 
   <!--<script type="text/javascript" src="javascripts/jquery-1.7.2.min.js"></script>-->
   <script type="text/javascript" src="javascripts/modernizr-2.6.2.min.js"></script>
@@ -23,6 +23,8 @@
   <script type="text/javascript" src="javascripts/jquery.lightbox-0.5.pack.js"></script>
   <script type="text/javascript" src="javascripts/script.js"></script>
   <script type="text/javascript" src="javascripts/main.js"></script>
+  <%= render "layouts/javascript/validate" %>
+
   <!--[if lt IE 10]>
   <script type="text/javascript" src="js/PIE.js"></script>
   <![endif]-->
@@ -33,17 +35,22 @@
   <meta name="author" content="Sitemaster"/>
 
 
-
   <link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'/>
 
 </head>
 <body>
 
 
-
-<%= yield %>
-
-<%= render "layouts/analitics"%>
+<%= render 'layouts/general/loader' %>
+<%= render 'layouts/general/navigation' %>
+<div id="scrollable">
+  <%= render 'layouts/general/topheadermenu' %>
+  <%= render 'layouts/general/topheader' %>
+  <%= yield %>
+  <%= render "layouts/general/footermenu" %>
+  <%= render "layouts/general/footer" %>
+  <%= render "layouts/analitics" %>
+</div>
 
 </body>
 </html>

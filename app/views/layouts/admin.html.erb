@@ -11,7 +11,7 @@
   <%= stylesheet_link_tag 'jquery.lightbox-0.5.css' %>
 
 
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
@@ -41,12 +41,14 @@
 </head>
 <body>
 <%= render "layouts/loader" %>
-<%= render "layouts/menu" %>
+<%= render "layouts/general/navigation" %>
 <div id="scrollable">
-<%= render "layouts/header" %>
-  <%= yield %>
-<%= render "layouts/footer" %>
-<%= render "layouts/analitics"%>
+  <%= render 'layouts/general/topheadermenu' %>
+  <%= render 'layouts/general/topheader' %>
+  <%= yield %></div>
+<%= render "layouts/general/footermenu" %>
+<%= render "layouts/general/footer" %>
+<%= render "layouts/analitics" %>
 
 </div>
 

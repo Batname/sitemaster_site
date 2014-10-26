@@ -5,13 +5,13 @@
 
 form label.error {
   position: absolute;
-  margin-left: -77px;
+  margin-left: -26px;
   background-image: url(image-path('wrong.png'));
   background-repeat: no-repeat;
   width:100px;
   height:100px;
   display: block;
-  margin-top: -55px;
+  margin-top: -63px;
 
 }
 .massage-text-field label.error {
@@ -56,6 +56,10 @@ form label.error {
   margin-top: 10px;
   position: absolute;
   height: 28px;
+  color: #31302B;
+  background: url("../images/bg_content.png") repeat scroll 0 0 transparent;
+  border: medium none;
+  padding: 0px 10px;
 }
 
 

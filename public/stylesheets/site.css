@@ -4,7 +4,7 @@
 body {
 	font-family: 'Verdana', Arial, Helvetica, sans-serif;
 	font-size: 13px;
-	line-height: 25px;
+	line-height: 20px;
 	color: #ffffff;
     background: url(../images/bg_footer.png) repeat scroll 0 0 transparent;
 }
@@ -28,7 +28,7 @@ p
 	font-size: 1em;
 	margin-top: 0px;
     margin-bottom: 20px;
-    line-height: 25px;
+    line-height: 20px;
 	letter-spacing: -0.02em;
 }
 a,
@@ -61,7 +61,7 @@ a:active
 }
 .showcase
 {
-	height: 1750px;
+	height: 1376px;
 }
 
 #scrollable
@@ -77,6 +77,11 @@ a:active
 {
 	width: 100%;
 	padding-top: 70px;
+}
+
+.showcase .showcase-sub-container
+{
+    padding-top: 0;
 }
 
 .inner-container:after {
@@ -158,28 +163,22 @@ a:active
 }
 .subheader-separator
 {
-	width: 980px;
+	width: 100%;
 	height: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
 	background: transparent url(../images/subheader/separator.png) no-repeat;
 }
 
+.contact-us .subheader-separator {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 /******************************************************************************/
 /*  BOTTOM ARROW                                                              */
 /******************************************************************************/
-.arrow
-{
-	width: 90px;
-	height: 40px;
-	margin-left: 50px;
-}
-.01 {background-color: #d82545;}
-.02 {background-color: #feac58;}
-.03 {background-color: #273c67;}
-.04 {background-color: #bab932;}
-.05 {background-color: #d82545;}
-.06 {background-color: #1e1e1e;}
+
 
 /******************************************************************************/
 /*  NAVIGATION                                                                */
@@ -287,10 +286,11 @@ a:active
 /******************************************************************************/
 /*  NAVIGATION HEAD                                                               */
 /******************************************************************************/
+
 .navigation-head
 {
     position: fixed;
-    top: 225px;
+    top: 150px;
     left: 0px;
     z-index: 200;
 }
@@ -311,29 +311,36 @@ a:active
     position: relative;
     display: inline-block;
     padding: 0.3em .5em 0.3em;
-    text-decoration: none;
-    background-color: #ffffff;
-    color: #888887;
+    background: url(../images/bg_left_menu.png) repeat scroll 0 0 transparent;
+    color: #ffffff;
     -moz-border-radius: 0 .4em .4em 0;  /* Firefox */
     -webkit-border-radius: 0 .4em .4em 0; /* Safari, Chrome */
     border-radius: 0 .4em .4em 0; /* CSS3 */
     outline: none;
     cursor: pointer;
+    text-decoration: none;
 }
+
+.navigation-head li a {
+    text-decoration: none;
+}
+
 .navigation-head a.nav-active
 {
-    color:#d82445;
+    color:#c14800;
 }
-.navigation-head a:hover
+.navigation-head a:hover,
+.navigation-head a:focus
 {
     background-color: #ffffff;
-    color:#d82545;
+    color:#c14800;
 }
 .navigation-head span
 {
     padding-left: 10px;
     padding-right: 10px;
 }
+
 
 /******************************************************************************/
 /*  BUTTON                                                                    */
@@ -399,12 +406,13 @@ a:active
 .first-section {background: url(../images/banner_home.jpg) repeat scroll 0 0 transparent;}
 .head-section {background: #1f1f1f url(../images/top_bg/top_bg.png) repeat-x; height: 290px;}
 .about {background: url(../images/bg_about.png) repeat scroll 0 0 transparent; height: 900px;}
-.services {background: url(../images/bg_content.png) repeat scroll 0 0 transparent;}
+.services {background: url(../images/bg_content.png) repeat scroll 0 0 transparent; height: 650px;}
 .showcase {background-color: #ffffff;}
 .our-team {background: url(../images/bg_content.png) repeat scroll 0 0 transparent;}
 .news {background-color: #ffffff;}
-.contact-us {background: url(../images/bg_contact.png) repeat scroll 0 0 transparent; height: 900px;}
+.contact-us {background: url(../images/bg_contact.png) repeat scroll 0 0 transparent; height: 754px;}
 .footer, .scripts {background: url(../images/bg_footer.png) repeat scroll 0 0 transparent;}
+.main-content {background: url(../images/bg_content.png) repeat scroll 0 0 transparent; height: 750px;}
 
 /******************************************************************************/
 /*  HEADER                                                                    */
@@ -423,7 +431,7 @@ a:active
 }
 .logo
 {
-
+padding: 5px 0;
 }
 
 .top-header .logo img {
@@ -554,7 +562,7 @@ a.socio_linkedin {background: transparent url('../images/socio/contact_dribbble_
 }
 .m-right-115
 {
-	margin-right: 115px;
+	margin-right: 60px;
 }
 .m-left-40
 {
@@ -610,6 +618,7 @@ a.socio_linkedin {background: transparent url('../images/socio/contact_dribbble_
 {
 	display: block;
 	text-transform: uppercase;
+    color: #31302B;
 }
 .services-list p
 {
@@ -624,6 +633,7 @@ ul.services-list li
 {
 	clear: both;
 	margin-bottom: 10px;
+    padding: 0 0 10px;
 }
 
 /******************************************************************************/
@@ -648,15 +658,17 @@ div.nomargin
 }
 .pic-frame
 {
-	position: relative;
-	float: left;
-	width: 260px;
-	height: 338px;
-	margin: 0 40px 40px 0;
-	font-size: 14px;
-	background-color: #ffffff;
-	color: #a8a8a8;
-	border: 20px solid white;
+    position: relative;
+    float: left;
+    height: 362px;
+    margin: 0px 25px 25px 0px;
+    font-size: 14px;
+    background: url(../images/bg_about.png);
+    color: #A8A8A8;
+    border: 20px;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
 	-moz-border-radius: 10px; /* Firefox */
 	-webkit-border-radius: 10px; /* Safari, Chrome */
 	border-radius: 10px; /* CSS3 */
@@ -690,7 +702,7 @@ span.roll
     margin-bottom: 5px;
 	margin-left: 5px;
 	letter-spacing: -0.02em;
-	color: #b1b0b0;
+	color: #ffffff;
 }
 .contact-form input[type=text]
 {
@@ -703,19 +715,40 @@ span.roll
 	font-family: 'Armata', Arial, Helvetica, sans-serif;
     font-size: 13px;
 	line-height: 40px;
-  	background-color: #333333;
-	color: #b1b0b0;
+    background: url("../images/bg_content.png") repeat scroll 0 0 transparent;
+	color: #31302B;
 	-moz-border-radius: 5px; /* Firefox */
 	-webkit-border-radius: 5px; /* Safari, Chrome */
 	border-radius: 5px; /* CSS3 */
 	border: none;
 	outline: none;
 }
+
+.contact-form select
+{
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 38px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-family: 'Armata', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 40px;
+    background: url("../images/bg_content.png") repeat scroll 0 0 transparent;
+    color: #31302B;
+    padding: 10px;
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari, Chrome */
+    border-radius: 5px; /* CSS3 */
+    border: none;
+    outline: none;
+}
 .contact-form textarea
 {
 	position: relative;
     display: block;
-	width: 330px;
+	width: 300px;
     height: 140px;
     margin-bottom: 11px;
 	padding: 10px 0 0 10px;
@@ -723,8 +756,8 @@ span.roll
 	font-family: 'Armata', Arial, Helvetica, sans-serif;
     font-size: 13px;
 	line-height: 40px;
-	background-color: #333333;
-	color: #b1b0b0;
+    background: url("../images/bg_content.png") repeat scroll 0 0 transparent;
+    color: #31302B;
 	-moz-border-radius: 5px; /* Firefox */
 	-webkit-border-radius: 5px; /* Safari, Chrome */
 	border-radius: 5px; /* CSS3 */
@@ -740,7 +773,7 @@ span.roll
 	padding: .4em 1em .45em;
 	font-family: 'Armata', Arial, Helvetica, sans-serif;
 	text-decoration: none;
-	background-color: #ac1f39;
+	background-color: #EF672F;
 	color: #ffffff;
 	-moz-border-radius: .5em; /* Firefox */
 	-webkit-border-radius: .5em; /* Safari, Chrome */
@@ -752,7 +785,7 @@ span.roll
 .submit-btn:hover
 {
 	text-decoration: none;
-	background-color: #b52540;
+	background-color: #C14800;
 }
 
 .mail-message-btn
@@ -867,6 +900,103 @@ a.socio_contact_dribbble {background: transparent url('../images/socio/contact_d
 a.socio_contact_behance {background: transparent url('../images/socio/contact_behance_icon.png') no-repeat;}
 a.socio_contact_flickr {background: transparent url('../images/socio/contact_flickr_icon.png') no-repeat;}
 
+
+
+/******************************************************************************/
+/*  CONTACT - SIDEBAR                                                             */
+/******************************************************************************/
+
+.sidebar {
+    padding: 30px 0 0;
+}
+.sidebar .new_contact_form {
+    padding: 15px;
+}
+
+.sidebar-container {
+    background: url(../images/bg_contact.png) repeat scroll 0 0 transparent
+}
+
+.sidebar-container .subheader-text {
+    color: #ffffff;
+    padding: 0 15px 0;
+}
+
+.sidebar-form label
+{
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+.sidebar-form input[type=text]
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 38px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-family: 'Armata', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 40px;
+    background: url("../images/bg_content.png") repeat scroll 0 0 transparent;
+    color: #31302B;
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari, Chrome */
+    border-radius: 5px; /* CSS3 */
+    border: none;
+    outline: none;
+}
+
+.sidebar-form select
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 38px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-family: 'Armata', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 40px;
+    background: url("../images/bg_content.png") repeat scroll 0 0 transparent;
+    color: #31302B;
+    padding: 10px;
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari, Chrome */
+    border-radius: 5px; /* CSS3 */
+    border: none;
+    outline: none;
+}
+.sidebar-form textarea
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 140px;
+    margin-bottom: 11px;
+    padding: 10px 0 0 10px;
+    overflow: auto;
+    font-family: 'Armata', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 40px;
+    background: url("../images/bg_content.png") repeat scroll 0 0 transparent;
+    color: #31302B;
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari, Chrome */
+    border-radius: 5px; /* CSS3 */
+    border: none;
+    outline: none;
+}
+
+.sidebar-form #uploadFile {
+    width: 100px;
+}
+
+
+
 /******************************************************************************/
 /*  FOOTER                                                                    */
 /******************************************************************************/
@@ -904,7 +1034,11 @@ a.socio_contact_flickr {background: transparent url('../images/socio/contact_fli
 /******************************************************************************/
 
 a.showcase-link{
-    color: #273C66;
+    color: #31302B;
+}
+
+.showcase-sub-container p {
+    color: #ffffff;
 }
 
 /******************************************************************************/

@@ -1,0 +1,36 @@
+<%= form_for :contact_form, :url => url_for(:controller => 'contact_forms', :action => 'create'), :html => {:id => 'new_contact_form', :class => 'new_contact_form'}, remote: true do |f| %>
+    <label for="name"><%=t :contact_content_2 %></label>
+    <%= f.text_field :name, onkeyup: false %>
+    <label for="name"><%=t :contact_content_3 %></label>
+    <%= f.text_field :email, onkeyup: false %>
+    <label for="name"><%=t :contact_content_4 %></label>
+    <% f.text_field :subject, onkeyup: false %>
+    <%= f.select :subject, (options_for_select(ContactFormsHelper.bat, 1)) %>
+    <div class="massage-text-field">
+      <label for="name"><%=t :contact_content_5 %></label>
+      <%= f.text_area :massage, onkeyup: false %>
+    </div>
+    <%= f.button  "#{t :contact_content_14}", class: "submit-btn rounded", id: "submit-mail", data: {:'disable-with' => "#{t :contact_content_15}"} %>
+
+    <div class="fileUpload" style="height: 46px">
+      <input id="uploadFile" placeholder="<%=t :contact_content_18 %>" disabled="disabled" />
+      <%= f.file_field :attachment, class: "upload", id: "uploadBtn" %>
+    </div>
+    <br>
+    <%=t :contact_content_20 %>
+<% end %>
+<div id="mail-message">
+  <table>
+    <tr>
+      <td>
+        <div id="mail-message-window">
+          <div class="mail-message-error" id="mail-message-header"></div>
+          <div class="team-member-name  m-bottom-10" id="mail-failure"><%=t :contact_content_16 %></div>
+          <p style="text-align: center" id="invalid-email"><%=t :contact_content_17 %></p>
+          <p style="text-align: center" id="footermail-success">&copy;<%= Date.today.year %> Emaster - <%=t :footer_content_1 %></p>
+          <input type="button" id="mail-message-btn" class="mail-message-btn rounded" value="OK" />
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>

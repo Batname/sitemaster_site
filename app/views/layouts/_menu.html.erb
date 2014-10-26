@@ -1,25 +1,6 @@
 <div class="toggler-menu" id="toggler-menu">
-  <div class="navigation-lang">
-    <% if I18n.locale == :en %>
-        <%= image_tag("navigate-lang.png", alt: "navigate_img") %>
-    <% elsif I18n.locale == :ru %>
-        <%= image_tag("navigate-lang_ru.png", alt: "navigate_img") %>
-    <% end %>
-
-    <ul>
-      <li>
-        <%= link_to('?locale=en', data: { no_turbolink: true }, class: 'nav-active rounded') do %><span>English</span><% end %>
-        <%= link_to('?locale=ru', data: { no_turbolink: true }, class: 'nav-active rounded') do %><span>Русский</span><% end %>
-      </li>
-    </ul>
-  </div>
-
   <div class="navigation-head">
-    <% if I18n.locale == :en %>
-        <%= image_tag("navigate.png", alt: "navigate_img") %>
-    <% elsif I18n.locale == :ru %>
-        <%= image_tag("navigate_ru.png", alt: "navigate_img") %>
-    <% end %>
+
     <ul>
       <li>
         <%= link_to "#{t :menu_1}", root_path, class: "rounded", data: {no_turbolink: true} %>
@@ -29,9 +10,6 @@
       </li>
       <li>
         <%= link_to "#{t :menu_4}", '/#showcase', class: "rounded", data: {no_turbolink: true} %>
-      </li>
-      <li>
-        <%= link_to "#{t :menu_7}", '/#news', class: "rounded", data: {no_turbolink: true} %>
       </li>
       <% if signed_in? %>
           <br>

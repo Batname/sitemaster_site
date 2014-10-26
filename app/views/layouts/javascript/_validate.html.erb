@@ -1,0 +1,42 @@
+<script>
+    (function() {
+        jQuery(function() {
+            var validate_url;
+            validate_url = '<%= home_uri %>contact_forms/validate';
+            return $('#new_contact_form, [id^=edit_contact_form_]').validate({
+                rules: {
+                    'contact_form[name]': {
+                        required: true,
+                        remote: {
+                            url: validate_url,
+                            type: 'post'
+                        }
+                    },
+                    'contact_form[email]': {
+                        required: true,
+                        remote: {
+                            url: validate_url,
+                            type: 'post'
+                        }
+                    },
+                    'contact_form[subject]': {
+                        required: true,
+                        remote: {
+                            url: validate_url,
+                            type: 'post'
+                        }
+                    },
+                    'contact_form[massage]': {
+                        required: true,
+                        remote: {
+                            url: validate_url,
+                            type: 'post'
+                        }
+                    }
+                }
+            });
+        });
+
+    }).call(this);
+</script>
+
