@@ -1,19 +1,20 @@
-<% provide(:title, 'New Page') %>
+<% provide(:title, 'Edit Pages') %>
 
-<div class="section showcase" id="showcase">
+<div class="main-content" id="">
   <div class="container">
     <div class="subheader">
       <div class="subheader-icon"></div>
       <div class="subheader-text">
-        New Project <span></span>
+        New Page <span></span>
       </div>
       <div class="subheader-separator"></div>
       <div class="column-455 m-right-70 m-top-50">
-
-        <%= render 'form' %>
+         <div class="page-form">
+           <%= render 'form' %>
+         </div>
         <br>
         <br>
-        <%= link_to 'Back', projects_path, class: "submit-btn rounded", style: "float: left" %>
+        <%= link_to 'Back', pages_path, class: "submit-btn rounded", style: "float: left" %>
 
       </div>
       <div class="clear"></div>

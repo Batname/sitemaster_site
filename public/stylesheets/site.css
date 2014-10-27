@@ -1092,7 +1092,17 @@ a.showcase-link{
     letter-spacing: -0.02em;
     color: #b1b0b0;
 }
-.edit_user input[type=text],.sign_user input[type=text],.new_user input[type=text],.edit_article input[type=text],.new_article input[type=text],.edit_project input[type=text],.new_project input[type=text],.new_service input[type=text],.edit_service input[type=text]
+.edit_user input[type=text],
+.sign_user input[type=text],
+.new_user input[type=text],
+.edit_article input[type=text],
+.new_article input[type=text],
+.edit_project input[type=text],
+.new_project input[type=text],
+.new_service input[type=text],
+.edit_service input[type=text],
+.new_page input[type=text],
+.edit_page input[type=text]
 {
     position: relative;
     display: block;
@@ -1112,7 +1122,17 @@ a.showcase-link{
     outline: none;
 }
 
-.edit_user input[type=password],.sign_user input[type=password],.new_user input[type=password],.edit_article input[type=password],.new_article input[type=password],.edit_project input[type=password],.new_project input[type=password],.new_service input[type=password],.edit_service input[type=password]
+.edit_user input[type=password],
+.sign_user input[type=password],
+.new_user input[type=password],
+.edit_article input[type=password],
+.new_article input[type=password],
+.edit_project input[type=password],
+.new_project input[type=password],
+.new_service input[type=password],
+.edit_service input[type=password],
+.new_page input[type=password],
+.edit_page input[type=password]
 {
     position: relative;
     display: block;
@@ -1132,7 +1152,17 @@ a.showcase-link{
     outline: none;
 }
 
-.edit_user textarea,.sign_user textarea,.new_user textarea,.edit_article textarea,.new_article textarea,.edit_project textarea,.new_project textarea,.new_service textarea,.edit_service textarea
+.edit_user textarea,
+.sign_user textarea,
+.new_user textarea,
+.edit_article textarea,
+.new_article textarea,
+.edit_project textarea,
+.new_project textarea,
+.new_service textarea,
+.edit_service textarea,
+.new_page textarea,
+.edit_page textarea
 {
     position: relative;
     display: block;

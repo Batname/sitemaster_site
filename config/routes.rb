@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'service/:permalink', :to => 'services#show'
   get 'project/:permalink', :to => 'projects#show'
   get 'article/:permalink', :to => 'articles#show'
+  get 'page/:permalink', :to => 'pages#show'
 
   resources :sessions,      only: [:new, :create, :destroy]
   resources :users
@@ -13,6 +14,7 @@ Rails.application.routes.draw do
   resources :projects
   resources :services
   resources :static_pages
+  resources :pages
   resource :contact_forms, :only => [:create, :validate]
   post ':controller/validate', action: 'validate', as: :validate_form
 
@@ -25,6 +27,7 @@ Rails.application.routes.draw do
   match '/edit_services',  to: 'services#index',         via: 'get'
   match '/edit_projects',  to: 'projects#index',         via: 'get'
   match '/edit_news',  to: 'articles#index',         via: 'get'
+  match '/edit_pages',  to: 'pages#index',         via: 'get'
   match '/blog',  to: 'articles#index',         via: 'get'
 
   match '/mailler/unsubscribe',  to: 'services#unsubscribe',            via: 'get'

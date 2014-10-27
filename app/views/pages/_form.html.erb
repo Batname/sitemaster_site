@@ -1,0 +1,68 @@
+<script>
+    $(document).ready(function(){
+        document.getElementById("uploadBtn").onchange = function () {
+            document.getElementById("uploadFile").value = this.value;
+        };
+        document.getElementById("uploadBtn_other").onchange = function () {
+            document.getElementById("uploadFile_other").value = this.value;
+        };
+    });
+</script>
+<%= form_for @page do |f| %>
+    <% if @page.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@page.errors.count, "error") %> prohibited
+            this page from being saved:</h2>
+          <ul>
+            <% @page.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+    <p>
+      <%= f.label :title %><br>
+      <%= f.text_field :title %>
+    </p>
+
+    <p>
+      <%= f.label :text %><br>
+      <%= f.text_area :text %>
+    </p>
+
+    <p>
+      <%= f.label :short_description %><br>
+      <%= f.text_area :short_description %>
+    </p>
+
+    <p>
+      <%= f.label(:permalink) %>
+      <%= f.text_field(:permalink) %>
+    </p>
+
+    <p>
+      <%= f.label(:position) %>
+      <%= f.select(:position, 1..@page_count) %>
+    </p>
+    <p>
+      <%= f.label(:visible) %>
+      <%= f.check_box(:visible) %>
+    </p>
+
+
+    <div class="fileUpload" style="height: 46px">
+      <input id="uploadFile" placeholder="<%=t :contact_content_18 %>" disabled="disabled" />
+      <%= f.file_field :attachment, class: "upload", id: "uploadBtn" %>
+    </div>
+    <div class="fileUpload" style="height: 46px">
+      <input id="uploadFile_other" placeholder="<%=t :contact_content_18 %>" disabled="disabled" />
+      <%= f.file_field :other_attachment, class: "upload", id: "uploadBtn_other" %>
+    </div>
+
+    <p>
+      <%= f.submit "Submit" , class: "submit-btn rounded", style: "float: left", id: "submit-mail", data: {:'disable-with' => "#{t :contact_content_15}"} %>
+    </p>
+    <br>
+    <div class="clearfix"></div>
+
+<% end %>

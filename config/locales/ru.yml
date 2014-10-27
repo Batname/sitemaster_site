@@ -29,6 +29,10 @@ ru:
               too_short:
                one: "is too short (minimum is 1 character)"
                other: "is too short (minimum is %{count} characters)"
+        page:
+          attributes:
+            short_description:
+              too_long: "Слишком длинное короткое описание"
   menu_1: "Домой"
   menu_2: "О Нас"
   menu_3: "Услуги"

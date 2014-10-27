@@ -1,0 +1,37 @@
+<% provide(:title, 'Edit Pages') %>
+<div class="main-content" id="">
+  <div class="container">
+    <div class="subheader">
+      <div class="subheader-icon"></div>
+      <div class="subheader-text">
+        Edit Pages <span></span>
+
+      </div>
+      <div class="subheader-separator"></div>
+      <div class="m-top-50">
+        <%= link_to 'New Pages', new_page_path %>
+        <br>
+        <br>
+
+        <%= will_paginate renderer: BootstrapPagination::Rails %>
+        <table class="table">
+          <% @pages.each do |page| %>
+              <tr>
+                <td><%= page.title %></td>
+                <td><%= truncate(page.text, length: 150) %></td>
+                <td><%= truncate(page.short_description, length: 150) %></td>
+                <td><%= page.permalink %></td>
+                <td><%= link_to_unless_current("Show", {controller: 'pages', action: 'show', permalink: page.permalink}, class: "", style: "", data: {no_turbolink: true}) %>
+                <td>
+                <td><%= link_to 'Edit', edit_page_path(page) %></td>
+                <td><%= link_to 'Destroy', page_path(page), method: :delete, data: {confirm: 'Are you sure?'} %></td>
+              </tr>
+          <% end %>
+        </table>
+        <%= will_paginate renderer: BootstrapPagination::Rails %>
+
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>

@@ -63,3 +63,35 @@ form label.error {
 }
 
 
+/* Other attachment start */
+
+
+.page-form .fileUpload input.upload {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+
+
+.page-form #uploadFile_other,
+.page-form #uploadFile
+{
+  width: 230px;
+  margin-top: 10px;
+  position: absolute;
+  height: 28px;
+  color: #ffffff;
+  background: url("../images/bg_footer.png") repeat scroll 0 0 transparent;
+  border: medium none;
+  padding: 0px 10px;
+}
+
+/* Other attachment finish*/
