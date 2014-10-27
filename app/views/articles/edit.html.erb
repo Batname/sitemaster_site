@@ -1,15 +1,18 @@
 <% provide(:title, 'Edit Articles') %>
-
-<div class="subheader">
-  <div class="subheader-icon"></div>
-  <div class="subheader-text">
-    Edit Article <span></span>
+<div class="section news" id="news">
+  <div class="container">
+    <div class="subheader">
+      <div class="subheader-icon"></div>
+      <div class="subheader-text">
+        Edit Article <span></span>
+      </div>
+      <div class="subheader-separator"></div>
+      <div class="column-455 m-right-70 m-top-50">
+        <%= render 'form' %>
+        <%= link_to 'Back', articles_path, class: "submit-btn rounded", style: "float: left" %>
+        <br>
+      </div>
+      <div class="clearfix"></div>
+    </div>
   </div>
-  <div class="subheader-separator"></div>
-  <div class="column-455 m-right-70 m-top-50">
-    <%= render 'form' %>
-    <%= link_to 'Back', articles_path, class: "submit-btn rounded", style: "float: left" %>
-    <br>
-  </div>
-  <div class="clearfix"></div>
 </div>

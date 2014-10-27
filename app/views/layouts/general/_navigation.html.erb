@@ -41,7 +41,7 @@
               <br>
               <br>
               <li><%= link_to  users_path, class: "rounded", data: {no_turbolink: true} do %><span>Users</span><% end %></li>
-              <li><%= link_to  current_user, class: "rounded", data: {no_turbolink: true} do %><span>Users</span><% end %></li>
+              <li><%= link_to  current_user, class: "rounded", data: {no_turbolink: true} do %><span>My user</span><% end %></li>
               <li><%= link_to edit_user_path(current_user), class: "rounded", data: {no_turbolink: true} do %><span>Settings</span><% end %></li>
               <li><%= link_to  signout_path, method: "delete", class: "rounded", data: {no_turbolink: true} do %><span>Sign out</span><% end %></li>
               <br>

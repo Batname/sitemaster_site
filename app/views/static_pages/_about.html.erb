@@ -1,111 +1,102 @@
 <div class="section about" id="about">
   <div class="container">
-    <div class="arrow 01">
-    </div>
     <div class="subheader">
       <div class="subheader-icon"></div>
       <div class="subheader-text">
-        <%=t :about_title_1 %> <span> <%=t :about_title_2 %></span>
+        <%= t :about_title_1 %> <span> <%= t :about_title_2 %></span>
       </div>
       <div class="subheader-separator"></div>
     </div>
-    <a href="http://webitcongress.com/en/2014/price.html?utm_source=partner&amp;utm_medium=referral&amp;utm_campaign=promodo"><img width="729px" height="92" style="padding-bottom:15px; padding-left:65px;" src="https://www.promodo.com/public/files/default/images/clients/webit-banner.gif"></a>
+  <div class="about-banner">
+    <%= link_to  'http://imagine2015.magento.com', target: "_blank", class: "", data: {no_turbolink: true} do %>
+        <%= image_tag("banners/imagine2015.png", alt: "First slide") %>
+    <% end %>
+  </div>
     <div class="row">
-    <div class="col-xs-3">
-      <h3>Our Partners</h3>
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="item active left">
-            <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNTU1O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+Rmlyc3Qgc2xpZGU8L3RleHQ+PC9zdmc+">
-          </div>
-          <div class="item next left">
-            <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzY2NiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNDQ0O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+U2Vjb25kIHNsaWRlPC90ZXh0Pjwvc3ZnPg==">
-          </div>
-          <div class="item">
-            <img data-src="holder.js/900x500/auto/#555:#333/text:Third slide" alt="Third slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzU1NSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojMzMzO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+VGhpcmQgc2xpZGU8L3RleHQ+PC9zdmc+">
-          </div>
-        </div>
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
-      <h3>Our Certifications</h3>
-      <div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-captions" data-slide-to="0" class=""></li>
-          <li data-target="#carousel-example-captions" data-slide-to="1" class=""></li>
-          <li data-target="#carousel-example-captions" data-slide-to="2" class="active"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="item">
-            <img data-src="holder.js/900x500/auto/#777:#777" alt="900x500" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNzc3O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+OTAweDUwMDwvdGV4dD48L3N2Zz4=">
-            <div class="carousel-caption">
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </div>
-          </div>
-          <div class="item">
-            <img data-src="holder.js/900x500/auto/#666:#666" alt="900x500" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzY2NiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNjY2O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+OTAweDUwMDwvdGV4dD48L3N2Zz4=">
-            <div class="carousel-caption">
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-          <div class="item active">
-            <img data-src="holder.js/900x500/auto/#555:#5555" alt="900x500" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzU1NSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNTU1NTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZTo1NnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjkwMHg1MDA8L3RleHQ+PC9zdmc+">
-            <div class="carousel-caption">
-              <h3>Third slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
-          </div>
-        </div>
-        <a class="left carousel-control" href="#carousel-example-captions" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-captions" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
-    </div>
-    <div class="col-xs-6">
-      <p>
-      <h3>BLOG POSTS</h3>
-      <ul class="blog">
-        <li>
-          <%= @last_article.title %>
-          <%= truncate(@last_article.text.html_safe, length: 650) %>
-          <%= link_to_unless_current("#{t :news_content_1}", {controller:'articles' , action: 'show', permalink: @last_article.permalink}, class: "button rounded", style: "left: -25px", data: { no_turbolink: true } ) %>
-          <p><%= @last_article.created_at.to_formatted_s(:long_ordinal) %></p>
-        </li>
-      </ul>
-
-     <%= link_to  blog_path, class: "rounded", data: {no_turbolink: true} do %><span>All news</span><% end %>
-
-      </p>
-    </div>
       <div class="col-xs-3">
-        <h3>Last Extention. Its Free</h3>
-        <h4>First Extention.</h4>
-        <p>Hello Everybody! Today is our 100th Download</p>
-        <h4>First Extention.</h4>
-        <p>Hello Everybody! Today is our 100th Download</p>
-        <h4>First Extention.</h4>
-        <p>Hello Everybody! Today is our 100th Download</p>
+        <h4>Our Partners</h4>
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="item next left">
+              <%= image_tag("partners/a_head.png", alt: "First slide") %>
+            </div>
+            <div class="item active left">
+              <%= image_tag("partners/anrom.png", alt: "First slide") %>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+        <h4>Our Certifications</h4>
+
+        <div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="item active">
+              <%= image_tag("certificates/magento_u.png", alt: "First slide") %>
+            </div>
+            <div class="item">
+              <%= image_tag("certificates/google_ad.png", alt: "First slide") %>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#carousel-example-captions" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-captions" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <p>
+
+        <h4>Blog post</h4>
+
+            <h5><%= @last_article.title %></h5>
+            <p><%= truncate(@last_article.short_description.html_safe, length: 550) %></p>
+            <%= link_to_unless_current("#{t :news_content_1}", {controller: 'articles', action: 'show', permalink: @last_article.permalink}, class: "", style: "", data: {no_turbolink: true}) %> | <%= link_to "All news", blog_path, class: "rounded", data: {no_turbolink: true} %>
+            <br><small><%= @last_article.created_at.to_formatted_s(:day_month_and_year) %></small><br><br>
+
+
+
+
+        </p>
+      </div>
+      <div class="col-xs-3">
+        <h4>Last Extention <span class="label label-info">It's free</span></h4>
+        <h5>First Extention.</h5>
+
+        <p>Hello Everybody! Today is our 100th <%= link_to 'Download', root_path, class: "rounded", data: {no_turbolink: true} %></p>
+        <h5>First Extention.</h5>
+
+        <p>Hello Everybody! Today is our 100th <%= link_to 'Download', root_path, class: "rounded", data: {no_turbolink: true} %></p>
+        <h5>First Extention.</h5>
+
+        <p>Hello Everybody! Today is our 100th <%= link_to 'Download', root_path, class: "rounded", data: {no_turbolink: true} %></p>
+
       </div>
     </div>
     <div class="clearfix"></div>
-    <p>Creative minds. Technical perfection. Big picture focus. Our team of certified Magento developers, consultants and designers takes care of our clients’ businesses striving for excellence in everything we do. Find more about our team, our services or get in touch if you want to work with us.</p>
-  <h4>Our Magento Ecosystem</h4>
-    <div>
-Google adwords Sales force so on
+    <div class="about-us">
+      <p>Creative minds. Technical perfection. Big picture focus. Our team of certified Magento developers, consultants
+        and designers takes care of our clients’ businesses striving for excellence in everything we do. Find more about
+        our team, our services or get in touch if you want to work with us.
+        Find more about our team, our services or get in touch if you want to work with us.</p>
+    </div>
+    <div class="ecosystem">
+    <h4>Our Magento Ecosystem</h4>
+      <div class="row eco-logos text-center jumbotron">
+        <div class="col-xs-2"> <%= image_tag("ecosystem/es-1.jpg", alt: "First slide") %></div>
+        <div class="col-xs-2"> <%= image_tag("ecosystem/es-2.jpg", alt: "First slide") %></div>
+        <div class="col-xs-2"> <%= image_tag("ecosystem/es-3.jpg", alt: "First slide") %></div>
+        <div class="col-xs-2"> <%= image_tag("ecosystem/es-4.jpg", alt: "First slide") %></div>
+        <div class="col-xs-2"> <%= image_tag("ecosystem/es-5.jpg", alt: "First slide") %></div>
+        <div class="col-xs-2"><%= image_tag("ecosystem/es-6.jpg", alt: "First slide") %></div>
+      </div>
     </div>
   </div>
 </div>

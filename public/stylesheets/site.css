@@ -405,7 +405,7 @@ a:active
 /******************************************************************************/
 .first-section {background: url(../images/banner_home.jpg) repeat scroll 0 0 transparent;}
 .head-section {background: #1f1f1f url(../images/top_bg/top_bg.png) repeat-x; height: 290px;}
-.about {background: url(../images/bg_about.png) repeat scroll 0 0 transparent; height: 900px;}
+.about {background: url(../images/bg_about.png) repeat scroll 0 0 transparent; height: 860px;}
 .services {background: url(../images/bg_content.png) repeat scroll 0 0 transparent; height: 650px;}
 .showcase {background-color: #ffffff;}
 .our-team {background: url(../images/bg_content.png) repeat scroll 0 0 transparent;}
@@ -484,6 +484,36 @@ padding: 5px 0;
 #gallery-nav a.gallery-nav-active
 {
 	background-color: #c14800;
+}
+
+/******************************************************************************/
+/* ABOUT                                                               */
+/******************************************************************************/
+
+.about a {
+    color:#31302B;
+}
+
+.about a:hover, .about a:active {
+    text-decoration: none;
+    color: #111111;
+}
+
+.about .about-us p {
+    color: #ffffff;
+}
+
+.about .ecosystem h4 {
+    padding-bottom: 10px;
+}
+
+.about .jumbotron {
+    padding: 10px;
+    background-color: #FFF;
+}
+
+.about .about-banner {
+    padding-bottom: 10px;
 }
 
 /******************************************************************************/
@@ -675,7 +705,8 @@ div.nomargin
 }
 .pic-frame span
 {
-	color: #273c66;
+	color: #31302B;
+    font-weight: bold;
 }
 span.roll
 {
@@ -921,6 +952,10 @@ a.socio_contact_flickr {background: transparent url('../images/socio/contact_fli
 .sidebar-container .subheader-text {
     color: #ffffff;
     padding: 0 15px 0;
+}
+
+.sidebar-form p {
+    color: #ffffff;
 }
 
 .sidebar-form label

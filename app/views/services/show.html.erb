@@ -15,8 +15,10 @@
     <div class="m-top-50">
       <div class="test"><%= @service.text.html_safe %></div>
       <% if signed_in? && current_user.admin? && !current_user?(@users) %>
-          <%= link_to 'Back', services_path %>
-          | <%= link_to 'Edit', edit_service_path(@service) %>
+          <%= link_to 'Back', services_path, data: {no_turbolink: true} %>
+          | <%= link_to 'Edit', edit_service_path(@service), data: {no_turbolink: true} %>
+      <% else %>
+          <%= link_to 'Back to home', root_path, data: {no_turbolink: true} %>
       <% end %>
       <div class="clear"></div>
     </div>

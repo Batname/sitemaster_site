@@ -8,6 +8,64 @@
   max-width: none !important;
 }
 
+/* Non-responsive overrides navbar.*/
+/* http://getbootstrap.com/examples/non-responsive/ */
+/* Always float the navbar header */
+.navbar-header {
+  float: left;
+}
+
+/* Undo the collapsing navbar */
+.navbar-collapse {
+  display: block !important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;
+}
+
+
+.navbar-toggle {
+  display: none;
+}
+.navbar-collapse {
+  border-top: 0;
+}
+
+.navbar-brand {
+  margin-left: -15px;
+}
+
+/* Always apply the floated nav */
+.navbar-nav {
+  float: left;
+  margin: 0;
+}
+.navbar-nav > li {
+  float: left;
+}
+.navbar-nav > li > a {
+  padding: 15px;
+}
+
+/* Redeclare since we override the float above */
+.navbar-nav.navbar-right {
+  float: right;
+}
+
+/* Undo custom dropdowns */
+.navbar .navbar-nav .open .dropdown-menu {
+  position: absolute;
+  float: left;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-width: 0 1px 1px;
+  border-radius: 0 0 4px 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+
 a {
   color: #EF672F;
   text-decoration: none;
@@ -19,6 +77,16 @@ a:hover
   color: #C14800;
 }
 
+h5, .h5 {
+  font-size: 15px;
+}
+
+
+.carousel-control.right,
+.carousel-control.left
+{
+  background: none;
+}
 .float-left {
   float: left;
 }
@@ -171,4 +239,34 @@ a:hover
   color: #C14800;
   background-color: #EEE;
   border-color: #DDD;
+}
+
+/******************************************************************************/
+/* Partner sliders                                                               */
+/******************************************************************************/
+
+.about .glyphicon-chevron-right:before,
+.about .glyphicon-chevron-left:before
+{
+  content: "";
+}
+
+.about .carousel-control .glyphicon-chevron-left {
+  background: url(image-path('partners/left_move.png')) no-repeat;
+}
+
+.about .carousel-control .glyphicon-chevron-right {
+  background: url(image-path('partners/right_move.png')) no-repeat;
+}
+
+.about .carousel-control .glyphicon-chevron-left,
+.about .carousel-control .glyphicon-chevron-right,
+.about .carousel-control .icon-prev,
+.about .carousel-control .icon-next {
+  height: 40px;
+}
+
+.about .carousel-control .glyphicon-chevron-right
+{
+  margin-right: -40px;
 }

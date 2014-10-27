@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
 
 
   def index
-    @articles = Article.paginate(page: params[:page], per_page: 5)
+    @articles = Article.sorted_new.paginate(page: params[:page], per_page: 5)
   end
 
   def show
@@ -77,17 +77,12 @@ class ArticlesController < ApplicationController
   end
 
   def determine_layout
-
-
     case
-      when signed_in? && params[:action] == 'new'
-        "admin"
-      when signed_in? && params[:action] == 'update'
+      when (signed_in? && params[:action] == 'new' || signed_in? && params[:action] == 'edit')
         "admin"
       else
         "pages"
     end
-
     # if signed_in? && params[:action] != 'show'
     #   "admin"
     # else

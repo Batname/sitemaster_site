@@ -2,8 +2,8 @@ class ProjectsController < ApplicationController
 
   layout :determine_layout
 
-  before_action :sign_in, only: [:new, :edit, :update, :destroy]
-  before_action :is_admin, only: [:new, :edit, :update, :destroy]
+  before_action :sign_in, except:  [:show]
+  before_action :is_admin, except:  [:show]
 
 
   def index
@@ -76,10 +76,11 @@ class ProjectsController < ApplicationController
   end
 
   def determine_layout
-    if signed_in? && params[:action] != 'show'
-      "admin"
-    else
-      "pages"
+    case
+      when (signed_in? && params[:action] == 'new' || signed_in? && params[:action] == 'edit')
+        "admin"
+      else
+        "pages"
     end
   end
 

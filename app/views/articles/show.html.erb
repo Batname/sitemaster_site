@@ -3,7 +3,7 @@
     <div class="subheader">
       <div class="subheader-icon"></div>
       <div class="subheader-text">
-        <%=t :news_title_1 %> <span><%= @article.title %></span>
+        <%=t :news_title_1 %>: <span><%= @article.title %></span>
       </div>
       <div class="subheader-separator"></div>
     </div>
@@ -12,8 +12,8 @@
       <div class="content-image"><%= image_tag @article.attachment.url %></div>
       <%end %>
     <div class="test"><%= @article.text.html_safe %></div>
+      <%= link_to 'Go to home', root_path , data: {no_turbolink: true} %> | <%= link_to 'All news', articles_path , data: {no_turbolink: true} %>
     <% if signed_in? && current_user.admin? && !current_user?(@users) %>
-    <%= link_to 'Back', articles_path %>
     | <%= link_to 'Edit', edit_article_path(@article) %>
     <% end %>
     <div class="clear"></div>

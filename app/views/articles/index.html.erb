@@ -1,5 +1,6 @@
 <% provide(:title, 'Edit Articles') %>
-
+<body data-no-turbolink="true">
+<!--http://stackoverflow.com/questions/22326473/rails-4-disable-turbolinks-in-a-specific-page-->
 <div class="subheader">
   <div class="subheader-icon"></div>
   <div class="subheader-text">
@@ -18,10 +19,11 @@
         <h2><%= article.title %></h2>
 
         <div class="article-image"><%= image_tag article.attachment.url %></div>
-        <div class="test"><%= truncate(article.text.html_safe, length: 750) %></div>
+        <div class="test"><%= truncate(article.short_description.html_safe, length: 840) %></div>
         <% article.permalink %>
+        <%= link_to_unless_current("Read more", {controller: 'articles', action: 'show', permalink: article.permalink}, class: "", style: "", data: {no_turbolink: true}) %>
+        <br><small><%= article.created_at.to_formatted_s(:day_month_and_year) %></small><br><br>
 
-        <%= link_to_unless_current("Show", {controller: 'articles', action: 'show', permalink: article.permalink}, class: "", style: "", data: {no_turbolink: true}) %>
         <% if signed_in? && current_user.admin? && !current_user?(@users) %>
         <%= link_to 'Edit', edit_article_path(article) %>
         <%= link_to 'Destroy', article_path(article), method: :delete, data: {confirm: 'Are you sure?'} %>

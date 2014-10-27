@@ -57,7 +57,7 @@ en:
   menu_5: "Our Team"
   menu_6: "Contact Us"
   menu_7: "Blog"
-  about_title_1: "about"
+  about_title_1: "General"
   about_title_2: "Who We Are. Get To Know Us Better."
   about_content_1: "We are a company to develop Magento from zero or develop Extensions. We specialize in programming languages ​​such Php, Javascript, Html, Css, Xml."
   about_content_2: "We Create Fun & We Do Stuff Together."
@@ -121,7 +121,7 @@ en:
   massage_content_6: "Attachment File"
   news_title_1: "news"
   news_title_2: "Read Our Latest News. Stay Informed."
-  news_content_1: "read more"
+  news_content_1: "Read more"
   services_content_11: "Read more."
 
 

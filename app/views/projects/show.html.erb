@@ -13,8 +13,9 @@
 </div>
 <div class="m-top-50">
   <div class="test"><%= @project.text.html_safe %></div>
+  <%= link_to 'Go to home', root_path , data: {no_turbolink: true} %>
   <% if signed_in? && current_user.admin? && !current_user?(@users) %>
-      <%= link_to 'Back', projects_path %>
+      | <%= link_to 'Back', projects_path %>
       | <%= link_to 'Edit', edit_project_path(@project) %>
   <% end %>
   <div class="clear"></div>
