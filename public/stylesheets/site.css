@@ -145,6 +145,10 @@ a:active
     color: #31302b;
 }
 
+.main-content .subheader-text {
+    font-size: 30px;
+}
+
 .contact-us .subheader-text {
     color: #ffffff;
 }
