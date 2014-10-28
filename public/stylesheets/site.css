@@ -1047,6 +1047,12 @@ a.socio_contact_flickr {background: transparent url('../images/socio/contact_fli
     text-align: center;
 	color: #ffffff;
 }
+
+.footer h6
+{
+    margin-top: 20px;
+}
+
 .footer_logo img
 {
 	width: 65px;
