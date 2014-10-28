@@ -1,25 +1,20 @@
-<% provide(:title, 'Edit Services') %>
+<% provide(:title, "#{t :service_content_4}") %>
 
-<div class="section services" id="services">
+<div class="main-content" id="">
   <div class="container">
-    <div class="arrow 05">
-      <%= image_tag("arrow/arrow_01.png", alt: "arrow_01") %>
-    </div>
     <div class="subheader">
       <div class="subheader-icon"></div>
       <div class="subheader-text">
-        New Service <span></span>
+        <%= t :service_content_4 %> <span></span>
       </div>
       <div class="subheader-separator"></div>
       <div class="column-455 m-right-70 m-top-50">
 
         <%= render 'form' %>
         <br>
-        <br>
-        <%= link_to 'Back', services_path, class: "submit-btn rounded", style: "float: left" %>
-
+        <div class="clearfix"></div>
+        <%= link_to "#{t :service_content_2}", services_path, class: "submit-btn rounded", style: "float: left" %>
       </div>
-      <div class="clear"></div>
     </div>
   </div>
 </div>

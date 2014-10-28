@@ -6,13 +6,13 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li><a href="#">About us</a></li>
+              <li><%= link_to "#{t :main_menu1}", "/page/about_us.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Magento Development</a></li>
-              <li><a href="#">Magento Design</a></li>
-              <li><a href="#">Magento Support</a></li>
-              <li><a href="#">Magento Promotion</a></li>
+              <li><%= link_to "#{t :main_menu2}", "/service/magento_development.html#{custom_locale_link}", class: '' , data: {no_turbolink: true}  %></li>
+              <li><%= link_to "#{t :main_menu3}", "/service/magento_design.html#{custom_locale_link}", class: '' , data: {no_turbolink: true}  %></li>
+              <li><%= link_to "#{t :main_menu4}", "/service/magento_support.html#{custom_locale_link}", class: '' , data: {no_turbolink: true}  %></li>
+              <li><%= link_to "#{t :main_menu5}", "/service/magento_promotion.html#{custom_locale_link}", class: '' , data: {no_turbolink: true}  %></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->

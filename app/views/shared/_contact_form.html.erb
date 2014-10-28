@@ -5,7 +5,8 @@
     <%= f.text_field :email, onkeyup: false %>
     <label for="name"><%=t :contact_content_4 %></label>
     <% f.text_field :subject, onkeyup: false %>
-    <%= f.select :subject, (options_for_select(ContactFormsHelper.bat, 1)) %>
+    <% #f.select :subject, (options_for_select(ContactFormsHelper.bat, 1)) %>
+    <%= f.select :subject, (options_for_select([["#{t :contact_content_21}", "#{t :contact_content_21}"], ['1000$', '1000$'], ['1000-5000$', '1000-5000$'], ['5000$+', '5000$+']], 1)) %>
     <div class="massage-text-field">
       <label for="name"><%=t :contact_content_5 %></label>
       <%= f.text_area :massage, onkeyup: false %>

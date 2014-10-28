@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   before_action :is_admin, except:  [:show]
 
   def index
-    @pages = Page.sorted_new.paginate(page: params[:page], per_page: 5)
+    @pages = Page.sorted_new.paginate(page: params[:page], per_page: 10)
   end
 
   def show

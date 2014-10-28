@@ -50,21 +50,108 @@ en:
               too_short:
                one: "is too short (minimum is 1 character)"
                other: "is too short (minimum is %{count} characters)"
+  helpers:
+    label:
+      article:
+        title: 'Title'
+        text: 'Text'
+        short_description: 'Short Description'
+        permalink: 'Link'
+        position: 'Position'
+        visible: 'Visible'
+      page:
+        title: 'Title'
+        text: 'Text'
+        short_description: 'Short Description'
+        permalink: 'Link'
+        position: 'Position'
+        visible: 'Visible'
+      project:
+        title: 'Title'
+        text: 'Text'
+        short_description: 'Short Description'
+        permalink: 'Link'
+        position: 'Position'
+        visible: 'Visible'
+      service:
+        title: 'Title'
+        text: 'Text'
+        short_description: 'Short Description'
+        permalink: 'Link'
+        position: 'Position'
+        visible: 'Visible'
+    submit:
+      article:
+        create: "Add %{model}"
+        update: "Update %{model}"
+      page:
+        create: "Add %{model}"
+        update: "Update %{model}"
+      project:
+        create: "Add %{model}"
+        update: "Update %{model}"
+      service:
+        create: "Add %{model}"
+        update: "Update %{model}"
   menu_1: "Take Me Home"
-  menu_2: "About"
+  menu_2: "General info"
   menu_3: "Services"
   menu_4: "Case Studies"
   menu_5: "Our Team"
   menu_6: "Contact Us"
-  menu_7: "Blog"
-  about_title_1: "General"
+  menu_7: "Get a free quote"
+  menu_8: "Users"
+  menu_9: "My user"
+  menu_10: "Settings"
+  menu_11: "Sign out"
+  menu_12: "Edit Services"
+  menu_13: "Edit Projects"
+  menu_14: "Edit News"
+  menu_15: "Edit Pages"
+  main_menu1: "About Us"
+  main_menu2: "Magento Development"
+  main_menu3: "Magento Design"
+  main_menu4: "Magento Support"
+  main_menu5: "Magento Promotion"
+  main_menu_submenu1: "About Us"
+  main_menu_submenu2: "Our team"
+  main_menu_submenu3: "Career"
+  main_menu_submenu4: "Contact us"
+  main_menu_submenu5: "Partnership"
+  main_menu_submenu6: "Development from Scratch"
+  main_menu_submenu7: "Development custom Extensions"
+  main_menu_submenu8: "Integration 3-party Extensions"
+  main_menu_submenu9: "Migration to Magento"
+  main_menu_submenu10: "Magento Enterprise"
+  main_menu_submenu11: "PSD to Magento"
+  main_menu_submenu12: "Theme Development"
+  main_menu_submenu13: "Theme Integration"
+  main_menu_submenu14: "Mobile Theme Development"
+  main_menu_submenu15: "Magento Upgrade"
+  main_menu_submenu16: "Extensions Upgrade"
+  main_menu_submenu17: "Magento Performance"
+  main_menu_submenu18: "Magento Consulting"
+  main_menu_submenu19: "Magento Training"
+  main_menu_submenu20: "Magento SEO Optimization"
+  main_menu_submenu21: "Magento SMM"
+  main_menu_submenu22: "Online marketing for Magento"
+  header_content_1: "Professional ecommerce Magento development"
+  about_title_1: "Info"
   about_title_2: "Who We Are. Get To Know Us Better."
-  about_content_1: "We are a company to develop Magento from zero or develop Extensions. We specialize in programming languages ​​such Php, Javascript, Html, Css, Xml."
+  about_content_1: "Creative minds. Technical perfection. Big picture focus. Our team of certified Magento developers, consultants
+                            and designers takes care of our clients’ businesses striving for excellence in everything we do. Find more about
+                            our team, our services or get in touch if you want to work with us.
+                            Find more about our team, our services or get in touch if you want to work with us"
   about_content_2: "We Create Fun & We Do Stuff Together."
   about_content_3: "Good work is worth sharing, especially if it means you don't have to do the same things over and over again. As designers and developers we're completely transparent through the whole creative process."
   about_content_4: "Not all surprises are good surprises. We communicate often with clients and bill for exact consulting hours, making us surprisingly awesome to work with SERTIFICATION"
   about_content_5: "Development is the personality of the web. You can only get by on good looks for so long before people start demanding something more functional and lasting. We know the value of solid development, and that’s why we look for more than just talented developers. Our team is also highly motivated and always looking for opportunities to teach and learn. Well versed in the Magento framework and beyond, our developers are excellent problem solvers and early adopters.  DOWNLOAD PRESENTATION"
-  services_title_1: "sitemaster"
+  about_content_6: "Our Partners"
+  about_content_7: "Our Certifications"
+  about_content_8: "Last blog post"
+  about_content_9: "Last Extensions"
+  about_content_10: "Our Magento Ecosystem"
+  services_title_1: "Services"
   services_title_2: "What We Do. Our List Of Services."
   services_content_1: "We are designers and developers. We make awesome things for the web."
   services_content_2: "Sitemaster specializes in web applications using open-source technologies like Ruby on Rails, Php, Java, and most industry standard JavaScript libraries like jQuery."
@@ -102,8 +189,8 @@ en:
   contact_content_8: "8 Ivan Lepse Ave."
   contact_content_9: "Kiev"
   contact_content_10: "Ukraine"
-  contact_content_11: "Phone: +38 044 38 44 670 "
-  contact_content_12: "E-mail: master@sitemaster.com.ua"
+  contact_content_11: "+38 044 38 44 670 "
+  contact_content_12: "master@sitemaster.com.ua"
   contact_content_13: "Website: www.sitemaster.com.ua"
   contact_content_14: "SENT"
   contact_content_15: "......"
@@ -112,16 +199,51 @@ en:
   contact_content_18: "Click to load file"
   contact_content_19: "UPLOAD"
   contact_content_20: "Attachment: Only image, word or excel file, pdf file."
-  footer_content_1: "We can do more :)"
-  massage_content_1: "Hello:"
+  contact_content_21: "Not sure"
+  contact_content_22: "Emaster"
+  contact_content_23: "emaster"
+  contact_content_24: "Contact"
+  footer_content_1: "Professional ecommerce Magento development"
+  massage_content_1: "You Name:"
   massage_content_2: "You email:"
-  massage_content_3: "You Subject:"
+  massage_content_3: "You Budget:"
   massage_content_4: "You massage:"
-  massage_content_5: "In the near future we will contact you:"
+  massage_content_5: "In the near future we will contact you"
   massage_content_6: "Attachment File"
-  news_title_1: "news"
+  massage_admin_content_1: "Hello Admin"
+  massage_admin_content_2: "You have massage from:"
+  massage_admin_content_3: "User email:"
+  massage_admin_content_4: "You Budget:"
+  massage_admin_content_5: "User massage:"
+  news_title_1: "News"
   news_title_2: "Read Our Latest News. Stay Informed."
   news_content_1: "Read more"
+  news_content_2: "All news"
+  news_content_3: "Edit post"
+  news_content_4: "New post"
+  news_content_5: "Delete post"
   services_content_11: "Read more."
-
+  form_1: "Sign in"
+  error_1: "prohibited from being saved:"
+  main_content_1: "Are you sure?"
+  main_content_2: "Back to home"
+  main_content_3: "It's free"
+  main_content_4: "Download"
+  page_content_1: "Show Page"
+  page_content_2: "All Pages"
+  page_content_3: "Edit Page"
+  page_content_4: "New Page"
+  page_content_5: "Delete Page"
+  project_content_1: "Show Project"
+  project_content_2: "All Projects"
+  project_content_3: "Edit Project"
+  project_content_4: "New Project"
+  project_content_5: "Delete Project"
+  service_content_1: "Show Service"
+  service_content_2: "All Services"
+  service_content_3: "Edit Service"
+  service_content_4: "New Service"
+  service_content_5: "Delete Service"
+  meta_1: "Professional ecommerce Magento development"
+  meta_description_1: "We are a company to develop Magento from zero or develop Extensions. We specialize in programming languages ​​such Php, Javascript, Html, Css, Xml"
 

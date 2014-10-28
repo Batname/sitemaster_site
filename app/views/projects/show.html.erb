@@ -1,8 +1,5 @@
 <% provide(:title, @project.title) %>
-<% provide(:description, @project.short_description) %>
-
-
-
+<% provide(:description, truncate(@project.short_description.html_safe, length: 250)) %>
 
 <div class="subheader">
   <div class="subheader-icon"></div>
@@ -13,10 +10,10 @@
 </div>
 <div class="m-top-50">
   <div class="test"><%= @project.text.html_safe %></div>
-  <%= link_to 'Go to home', root_path , data: {no_turbolink: true} %>
+  <%= link_to "#{t :main_content_2}", root_path , data: {no_turbolink: true} %>
   <% if signed_in? && current_user.admin? && !current_user?(@users) %>
-      | <%= link_to 'Back', projects_path %>
-      | <%= link_to 'Edit', edit_project_path(@project) %>
+      | <%= link_to "#{t :project_content_2}", projects_path %>
+      | <%= link_to "#{t :project_content_3}", edit_project_path(@project) %>
   <% end %>
   <div class="clear"></div>
 </div>

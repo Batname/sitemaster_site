@@ -30,6 +30,3 @@ class Page < ActiveRecord::Base
   end
 
 end
-
-# https://www.ruby-toolbox.com/projects/translit
-# About translit

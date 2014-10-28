@@ -1,17 +1,17 @@
-<% provide(:title, 'Edit Pages') %>
+<% provide(:title, "#{t :page_content_3}") %>
 <div class="main-content" id="">
   <div class="container">
     <div class="subheader">
       <div class="subheader-icon"></div>
       <div class="subheader-text">
-        Edit Pages <span></span>
+        <%= t :page_content_3 %> <span></span>
       </div>
       <div class="subheader-separator"></div>
       <div class="column-455 m-right-70 m-top-50">
         <div class="page-form">
           <%= render 'form' %>
         </div>
-        <%= link_to 'Back', pages_path, class: "submit-btn rounded", style: "float: left" %>
+        <%= link_to "#{t :page_content_2}", pages_path, class: "submit-btn rounded", style: "float: left" %>
         <br>
       </div>
       <div class="clearfix"></div>

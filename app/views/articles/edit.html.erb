@@ -1,15 +1,15 @@
-<% provide(:title, 'Edit Articles') %>
+<% provide(:title, "#{t :news_content_3}") %>
 <div class="section news" id="news">
   <div class="container">
     <div class="subheader">
       <div class="subheader-icon"></div>
       <div class="subheader-text">
-        Edit Article <span></span>
+        <%= t :news_content_3 %> <span></span>
       </div>
       <div class="subheader-separator"></div>
       <div class="column-455 m-right-70 m-top-50">
         <%= render 'form' %>
-        <%= link_to 'Back', articles_path, class: "submit-btn rounded", style: "float: left" %>
+        <%= link_to "#{t :news_content_2}", articles_path, class: "submit-btn rounded", style: "float: left" %>
         <br>
       </div>
       <div class="clearfix"></div>

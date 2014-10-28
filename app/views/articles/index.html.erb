@@ -1,12 +1,12 @@
-<% provide(:title, 'Edit Articles') %>
+<% provide(:title, "#{t :news_content_2}") %>
 <body data-no-turbolink="true">
 <!--http://stackoverflow.com/questions/22326473/rails-4-disable-turbolinks-in-a-specific-page-->
 <div class="subheader">
   <div class="subheader-icon"></div>
   <div class="subheader-text">
-    Articles <span>
+    <%= t :news_content_2 %> <span>
     <% if signed_in? && current_user.admin? && !current_user?(@users) %>
-        <%= link_to 'New article', new_article_path %>
+        <%= link_to "#{t :news_content_4}", new_article_path %>
         <% end %>
         </span>
   </div>
@@ -21,12 +21,12 @@
         <div class="article-image"><%= image_tag article.attachment.url %></div>
         <div class="test"><%= truncate(article.short_description.html_safe, length: 840) %></div>
         <% article.permalink %>
-        <%= link_to_unless_current("Read more", {controller: 'articles', action: 'show', permalink: article.permalink}, class: "", style: "", data: {no_turbolink: true}) %>
+        <%= link_to_unless_current("#{t :news_content_1}", {controller: 'articles', action: 'show', permalink: "#{article.permalink}.html"}, class: "", style: "", data: {no_turbolink: true}) %>
         <br><small><%= article.created_at.to_formatted_s(:day_month_and_year) %></small><br><br>
 
         <% if signed_in? && current_user.admin? && !current_user?(@users) %>
-        <%= link_to 'Edit', edit_article_path(article) %>
-        <%= link_to 'Destroy', article_path(article), method: :delete, data: {confirm: 'Are you sure?'} %>
+        <%= link_to "#{t :news_content_3}", edit_article_path(article) %>
+        <%= link_to "#{t :news_content_5}", article_path(article), method: :delete, data: {confirm: "#{t :main_content_1}"} %>
         <% end %>
 
         <div class="clearfix"></div>

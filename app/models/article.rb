@@ -7,7 +7,6 @@ class Article < ActiveRecord::Base
   do_not_validate_attachment_file_type :attachment, :default_url => "/images/:style/missing.png"
   has_attached_file :attachment
 
-  validates_presence_of :permalink
   validates_length_of :permalink, :within => 3..255
   # use presence_of with length_of to disallow spaces
   validates_uniqueness_of :permalink
@@ -24,7 +23,7 @@ class Article < ActiveRecord::Base
 
   def add_default_permalink
     if permalink.blank?
-      self.permalink = "#{id}-#{name.parameterize}"
+      self.permalink = "#{title.tr(' ', '_').downcase.parameterize}"
     end
   end
 

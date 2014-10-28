@@ -1,9 +1,5 @@
 <% provide(:title, @service.title) %>
-<% provide(:description, @service.short_description) %>
-
-<% content_for :bat do %>
-    This content00000000 will show up in the footer section
-<% end %>
+<% provide(:description, truncate(@service.short_description.html_safe, length: 250)) %>
 
     <div class="subheader">
       <div class="subheader-icon"></div>
@@ -14,11 +10,10 @@
     </div>
     <div class="m-top-50">
       <div class="test"><%= @service.text.html_safe %></div>
+      <%= link_to "#{t :main_content_2}", root_path, data: {no_turbolink: true} %>
       <% if signed_in? && current_user.admin? && !current_user?(@users) %>
-          <%= link_to 'Back', services_path, data: {no_turbolink: true} %>
-          | <%= link_to 'Edit', edit_service_path(@service), data: {no_turbolink: true} %>
-      <% else %>
-          <%= link_to 'Back to home', root_path, data: {no_turbolink: true} %>
+          | <%= link_to "#{t :service_content_2}", services_path, data: {no_turbolink: true} %>
+          | <%= link_to "#{t :service_content_3}", edit_service_path(@service), data: {no_turbolink: true} %>
       <% end %>
       <div class="clear"></div>
     </div>

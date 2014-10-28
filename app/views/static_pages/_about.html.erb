@@ -14,7 +14,7 @@
   </div>
     <div class="row">
       <div class="col-xs-3">
-        <h4>Our Partners</h4>
+        <h4><%= t :about_content_6 %></h4>
 
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
@@ -32,7 +32,7 @@
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
         </div>
-        <h4>Our Certifications</h4>
+        <h4><%= t :about_content_7 %></h4>
 
         <div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
@@ -52,43 +52,33 @@
         </div>
       </div>
       <div class="col-xs-6">
-        <p>
-
-        <h4>Blog post</h4>
-
+        <h4><%= t :about_content_8 %></h4>
             <h5><%= @last_article.title %></h5>
             <p><%= truncate(@last_article.short_description.html_safe, length: 550) %></p>
-            <%= link_to_unless_current("#{t :news_content_1}", {controller: 'articles', action: 'show', permalink: @last_article.permalink}, class: "", style: "", data: {no_turbolink: true}) %> | <%= link_to "All news", blog_path, class: "rounded", data: {no_turbolink: true} %>
+            <%= link_to_unless_current("#{t :news_content_1}", {controller: 'articles', action: 'show', permalink: @last_article.permalink}, class: "", style: "", data: {no_turbolink: true}) %> | <%= link_to "#{t :news_content_2}", blog_path, class: "rounded", data: {no_turbolink: true} %>
             <br><small><%= @last_article.created_at.to_formatted_s(:day_month_and_year) %></small><br><br>
 
-
-
-
-        </p>
       </div>
       <div class="col-xs-3">
-        <h4>Last Extention <span class="label label-info">It's free</span></h4>
-        <h5>First Extention.</h5>
+        <h4><%= t :about_content_9 %><span class="label label-info"><%= t :main_content_3 %></span></h4>
+        <h5>First Extension.</h5>
 
-        <p>Hello Everybody! Today is our 100th <%= link_to 'Download', root_path, class: "rounded", data: {no_turbolink: true} %></p>
-        <h5>First Extention.</h5>
+        <p>Hello Everybody! Today is our 100th <%= link_to "#{t :main_content_4}", root_path, class: "rounded", data: {no_turbolink: true} %></p>
+        <h5>First Extension.</h5>
 
-        <p>Hello Everybody! Today is our 100th <%= link_to 'Download', root_path, class: "rounded", data: {no_turbolink: true} %></p>
-        <h5>First Extention.</h5>
+        <p>Hello Everybody! Today is our 100th <%= link_to "#{t :main_content_4}", root_path, class: "rounded", data: {no_turbolink: true} %></p>
+        <h5>First Extension.</h5>
 
-        <p>Hello Everybody! Today is our 100th <%= link_to 'Download', root_path, class: "rounded", data: {no_turbolink: true} %></p>
+        <p>Hello Everybody! Today is our 100th <%= link_to "#{t :main_content_4}", root_path, class: "rounded", data: {no_turbolink: true} %></p>
 
       </div>
     </div>
     <div class="clearfix"></div>
     <div class="about-us">
-      <p>Creative minds. Technical perfection. Big picture focus. Our team of certified Magento developers, consultants
-        and designers takes care of our clients’ businesses striving for excellence in everything we do. Find more about
-        our team, our services or get in touch if you want to work with us.
-        Find more about our team, our services or get in touch if you want to work with us.</p>
+      <p><%= t :about_content_1 %></p>
     </div>
     <div class="ecosystem">
-    <h4>Our Magento Ecosystem</h4>
+    <h4><%= t :about_content_10 %></h4>
       <div class="row eco-logos text-center jumbotron">
         <div class="col-xs-2"> <%= image_tag("ecosystem/es-1.jpg", alt: "First slide") %></div>
         <div class="col-xs-2"> <%= image_tag("ecosystem/es-2.jpg", alt: "First slide") %></div>

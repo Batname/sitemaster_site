@@ -1,57 +1,57 @@
 <div class="section services" id="services">
   <div class="container">
     <div class="arrow 02">
-      <img src="images/arrow/arrow_02.png" alt="arrow_02" />
+      <img src="images/arrow/arrow_02.png" alt="arrow_02"/>
     </div>
     <div class="subheader">
       <div class="subheader-icon"></div>
       <div class="subheader-text">
-        <%=t :services_title_1 %> <span><%=t :services_title_2 %></span>
+        <%= t :services_title_1 %> <span><%= t :services_title_2 %></span>
       </div>
       <div class="subheader-separator"></div>
     </div>
     <div class="clearfix"></div>
     <div class="row">
-    <div class="col-xs-6">
-      <% if I18n.locale == :en %>
-          <img src="images/services/services_image.png" alt="image_02" />
-      <% elsif I18n.locale == :ru %>
-          <img src="images/services/services_image_ru.png" alt="image_02" />
-      <% end %>
-    </div>
-    <div class="col-xs-6">
-      <ul class="services-list">
-        <li>
-          <img src="images/services/services_icon_01.png" alt="icon_01" />
-          <span class="service-title"><%=t :services_content_3 %></span>
-          <p>
-            <%=t :services_content_4 %>
-            <%= link_to_unless_current("#{t :services_content_11}", {controller:'services' , action: 'show', permalink: Service.first.permalink}, data: { no_turbolink: true } ) %>
-          </p>
-        </li>
-        <li>
-          <img src="images/services/services_icon_02.png" alt="icon_02" />
-          <span class="service-title"><%=t :services_content_5 %></span>
-          <p>
-            <%=t :services_content_6 %><br>
-          </p>
-        </li>
-        <li>
-          <img src="images/services/services_icon_03.png" alt="icon_03" />
-          <span class="service-title"><%=t :services_content_7 %></span>
-          <p>
-            <%=t :services_content_8 %>
-          </p>
-        </li>
-        <li>
-          <img src="images/services/services_icon_04.png" alt="icon_04" />
-          <span class="service-title"><%=t :services_content_9 %></span>
-          <p>
-            <%=t :services_content_10 %>
-          </p>
-        </li>
-      </ul>
-    </div>
+      <div class="col-xs-6">
+        <% if I18n.locale == :en %>
+            <img src="images/services/services_image.png" alt="image_02"/>
+        <% elsif I18n.locale == :ru %>
+            <img src="images/services/services_image_ru.png" alt="image_02"/>
+        <% end %>
+      </div>
+      <div class="col-xs-6">
+        <ul class="services-list">
+          <li>
+            <img src="images/services/services_icon_01.png" alt="icon_01"/>
+            <span class="service-title"><%= link_to "#{t :main_menu2}", "/service/magento_development.html#{custom_locale_link}", class: '', data: {no_turbolink: true} %></span>
+            <p>
+              <%= t :services_content_4 %>
+            </p>
+          </li>
+          <li>
+            <img src="images/services/services_icon_02.png" alt="icon_02"/>
+            <span class="service-title"><%= link_to "#{t :main_menu3}", "/service/magento_design.html#{custom_locale_link}", class: '', data: {no_turbolink: true} %></span>
+            <p>
+              <%= t :services_content_6 %>
+              <br>
+            </p>
+          </li>
+          <li>
+            <img src="images/services/services_icon_03.png" alt="icon_03"/>
+            <span class="service-title"><%= link_to "#{t :main_menu4}", "/service/magento_support.html#{custom_locale_link}", class: '', data: {no_turbolink: true} %></span>
+            <p>
+              <%= t :services_content_8 %>
+            </p>
+          </li>
+          <li>
+            <img src="images/services/services_icon_04.png" alt="icon_04"/>
+            <span class="service-title"><%= link_to "#{t :main_menu5}", "/service/magento_promotion.html#{custom_locale_link}", class: '', data: {no_turbolink: true} %></span>
+            <p>
+              <%= t :services_content_10 %>
+            </p>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

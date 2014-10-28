@@ -7,14 +7,14 @@ class ServicesController < ApplicationController
 
 
   def index
-    @services = Service.paginate(page: params[:page], per_page: 6)
+    @services = Service.sorted_new.paginate(page: params[:page], per_page: 10)
   end
 
   def show
 
     @service = Service.where(:permalink => params[:permalink], :visible => true).first
     if @service.nil?
-      #redirect_to root_path
+      redirect_to root_path
     else
       # display the page content using show.html.erb
     end
@@ -77,11 +77,16 @@ class ServicesController < ApplicationController
   end
 
   def determine_layout
-    case
-      when (signed_in? && params[:action] == 'new' || signed_in? && params[:action] == 'edit')
-        "admin"
-      else
-        "pages"
+    # case
+    #   when (signed_in? && params[:action] == 'new' || signed_in? && params[:action] == 'edit')
+    #     "admin"
+    #   else
+    #     "pages"
+    # end
+    if signed_in? && params[:action] != 'show'
+      "admin"
+    else
+      "pages"
     end
   end
 

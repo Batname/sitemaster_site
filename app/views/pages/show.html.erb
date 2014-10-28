@@ -1,5 +1,5 @@
 <% provide(:title, @page.title) %>
-<% provide(:description, @page.short_description) %>
+<% provide(:description, truncate(@page.short_description.html_safe, length: 250)) %>
 <div class="subheader">
   <div class="subheader-icon"></div>
   <div class="subheader-text">
@@ -20,10 +20,10 @@
       <br>
   <% end %>
 
-  <%= link_to 'Go to home', root_path , data: {no_turbolink: true} %>
+  <%= link_to "#{t :main_content_2}", root_path , data: {no_turbolink: true} %>
   <% if signed_in? && current_user.admin? && !current_user?(@users) %>
-      | <%= link_to 'All page', pages_path , data: {no_turbolink: true} %>
-      | <%= link_to 'Edit', edit_page_path(@page) %>
+      | <%= link_to "#{t :page_content_2}", pages_path , data: {no_turbolink: true} %>
+      | <%= link_to "#{t :page_content_3}", edit_page_path(@page) %>
   <% end %>
   <div class="clear"></div>
 </div>

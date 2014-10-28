@@ -6,7 +6,7 @@
             <a href="#take-me-home" class="nav-active rounded"><span><%=t :menu_1 %></span></a>
           </li>
           <li>
-            <a href="#about" class="rounded"><span>General info</span></a>
+            <a href="#about" class="rounded"><span><%=t :menu_2 %></span></a>
           </li>
           <li>
             <a href="#services" class="rounded"><span><%=t :menu_3 %></span></a>
@@ -15,7 +15,7 @@
             <a href="#showcase" class="rounded"><span><%=t :menu_4 %></span></a>
           </li>
           <li>
-            <a href="#contact-us" class="rounded"><span>Get a free quote</span></a>
+            <a href="#contact-us" class="rounded"><span><%=t :menu_7 %></span></a>
           </li>
         </ul>
       </div>
@@ -28,28 +28,28 @@
              <% end %>
           </li>
           <li>
-            <%= link_to  '/#services', class: "rounded", data: {no_turbolink: true} do %>
+            <%= link_to  "/#{custom_locale_link}#services", class: "rounded", data: {no_turbolink: true} do %>
                 <span><%= t :menu_3 %></span>
            <% end %>
           </li>
           <li>
-            <%= link_to '/#showcase', class: "rounded", data: {no_turbolink: true} do %>
+            <%= link_to "/#{custom_locale_link}#showcase", class: "rounded", data: {no_turbolink: true} do %>
                 <span><%= t :menu_4 %></span>
             <% end %>
           </li>
           <% if signed_in? %>
               <br>
               <br>
-              <li><%= link_to  users_path, class: "rounded", data: {no_turbolink: true} do %><span>Users</span><% end %></li>
-              <li><%= link_to  current_user, class: "rounded", data: {no_turbolink: true} do %><span>My user</span><% end %></li>
-              <li><%= link_to edit_user_path(current_user), class: "rounded", data: {no_turbolink: true} do %><span>Settings</span><% end %></li>
-              <li><%= link_to  signout_path, method: "delete", class: "rounded", data: {no_turbolink: true} do %><span>Sign out</span><% end %></li>
+              <li><%= link_to  users_path, class: "rounded", data: {no_turbolink: true} do %><span><%= t :menu_8 %></span><% end %></li>
+              <li><%= link_to  current_user, class: "rounded", data: {no_turbolink: true} do %><span><%= t :menu_9 %></span><% end %></li>
+              <li><%= link_to edit_user_path(current_user), class: "rounded", data: {no_turbolink: true} do %><span><%= t :menu_10 %></span><% end %></li>
+              <li><%= link_to  signout_path, method: "delete", class: "rounded", data: {no_turbolink: true} do %><span><%= t :menu_11 %></span><% end %></li>
               <br>
               <br>
-              <li><%= link_to  edit_services_path, class: "rounded", data: {no_turbolink: true} do %><span>Edit Services</span><% end %></li>
-              <li><%= link_to  edit_projects_path, class: "rounded", data: {no_turbolink: true} do %><span>Edit Projects</span><% end %></li>
-              <li><%= link_to  edit_news_path, class: "rounded", data: {no_turbolink: true} do %><span>Edit News</span><% end %></li>
-              <li><%= link_to  edit_pages_path, class: "rounded", data: {no_turbolink: true} do %><span>Edit Pages</span><% end %></li>
+              <li><%= link_to  edit_services_path, class: "rounded", data: {no_turbolink: true} do %><span><%= t :menu_12 %></span><% end %></li>
+              <li><%= link_to  edit_projects_path, class: "rounded", data: {no_turbolink: true} do %><span><%= t :menu_13 %></span><% end %></li>
+              <li><%= link_to  edit_news_path, class: "rounded", data: {no_turbolink: true} do %><span><%= t :menu_14 %></span><% end %></li>
+              <li><%= link_to  edit_pages_path, class: "rounded", data: {no_turbolink: true} do %><span><%= t :menu_15 %></span><% end %></li>
           <% end %>
         </ul>
       </div>

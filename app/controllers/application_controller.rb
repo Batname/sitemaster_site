@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
   include SessionsHelper
 
   helper_method :home_uri
+  helper_method :custom_locale_link
 
   def validator(object)
     object.valid?
@@ -25,6 +26,10 @@ class ApplicationController < ActionController::Base
 
   def home_uri
     'http://localhost:3000/'
+  end
+
+  def custom_locale_link
+    "?locale=#{params[:locale] if params[:locale].present?}"
   end
 
   private

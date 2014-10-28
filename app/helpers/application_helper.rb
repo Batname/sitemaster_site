@@ -2,7 +2,7 @@ module ApplicationHelper
 
   # Returns the full title on a per-page basis.
   def full_title(page_title)
-    base_title = "Sitemaster - Create web & mobile apps"
+    base_title = t :meta_1
     if page_title.empty?
       base_title
     else
@@ -12,7 +12,7 @@ module ApplicationHelper
 
   # Returns the full title on a per-page basis.
   def full_description(page_description)
-    base_description = "We are a company to develop mobile and web applications"
+    base_description = t :meta_description_1
     if page_description.empty?
       base_description
     else

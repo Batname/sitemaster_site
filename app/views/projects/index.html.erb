@@ -1,18 +1,19 @@
-<% provide(:title, 'Edit Projects') %>
-
+<% provide(:title, "#{t :project_content_2}") %>
+<div class="main-content" id="">
+  <div class="container">
     <div class="subheader">
       <div class="subheader-icon"></div>
       <div class="subheader-text">
-        Edit Projects  <span></span>
+        <%= t :project_content_2 %> <span></span>
 
       </div>
       <div class="subheader-separator"></div>
       <div class="m-top-50">
-        <%= link_to 'New Projects', new_project_path %>
+        <%= link_to "#{t :project_content_4}", new_project_path %>
         <br>
         <br>
 
-        <%= will_paginate %>
+        <%= will_paginate renderer: BootstrapPagination::Rails %>
         <table class="table">
           <% @projects.each do |project| %>
               <tr>
@@ -20,14 +21,16 @@
                 <td><%= truncate(project.text, length: 150)  %></td>
                 <td><%= project.short_description %></td>
                 <td><%= project.permalink %></td>
-                <td><%= link_to_unless_current("Show", {controller:'projects' , action: 'show', permalink: project.permalink}, class: "", style: "", data: { no_turbolink: true } ) %> <td>
-                <td><%= link_to 'Edit', edit_project_path(project) %></td>
-                <td><%= link_to 'Destroy', project_path(project), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                <td><%= link_to_unless_current("#{t :project_content_1}", {controller:'projects' , action: 'show', permalink: "#{project.permalink}.html"}, class: "", style: "", data: { no_turbolink: true } ) %> <td>
+                <td><%= link_to "#{t :project_content_3}", edit_project_path(project) %></td>
+                <td><%= link_to "#{t :project_content_5}", project_path(project), method: :delete, data: { confirm: "#{t :main_content_1}" } %></td>
               </tr>
           <% end %>
         </table>
-        <%= will_paginate %>
+        <%= will_paginate renderer: BootstrapPagination::Rails %>
 
       </div>
       <div class="clear"></div>
     </div>
+  </div>
+</div>

@@ -76,11 +76,10 @@ class ProjectsController < ApplicationController
   end
 
   def determine_layout
-    case
-      when (signed_in? && params[:action] == 'new' || signed_in? && params[:action] == 'edit')
-        "admin"
-      else
-        "pages"
+    if signed_in? && params[:action] != 'show'
+      "admin"
+    else
+      "pages"
     end
   end
 

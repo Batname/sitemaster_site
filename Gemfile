@@ -66,9 +66,6 @@ gem 'paperclip'
 # Эффект для меню
 #gem 'jquery-ui-rails'
 
-# https://github.com/globalize/globalize
-# Модуль для перевода строк в базе данных
-gem 'globalize', '~> 4.0.1'
 
 # Создание записей в базе данных
 gem 'faker', '1.1.2'

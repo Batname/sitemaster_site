@@ -7,56 +7,54 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">About
-                us</a>
+              <%= link_to "#{t :main_menu1}", "/page/about_us.html#{custom_locale_link}", class: 'dropdown-toggle' , data: {no_turbolink: true, toggle: "modal", hover: 'dropdown'}  %>
               <ul class="dropdown-menu" role="menu">
-                <li><%= link_to 'About us', '/page/about_us', class: '', data: {no_turbolink: true}  %></li>
-                <li><a href="#">Our team</a></li>
-                <li><a href="#">Career</a></li>
+                <li><%= link_to "#{t :main_menu_submenu1}", "/page/about_us.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
+                <li><%= link_to "#{t :main_menu_submenu2}", "/page/our_team.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
+                <li><%= link_to "#{t :main_menu_submenu3}", "/page/career.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
                 <li class="divider"></li>
-                <li><a href="#">Contact us</a></li>
+                <li><%= link_to "#{t :main_menu_submenu4}", "/page/contact_us.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
                 <li class="divider"></li>
-                <li><a href="#">Partnership</a></li>
+                <li><%= link_to "#{t :main_menu_submenu5}", "/page/partnership.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
               </ul>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Magento Development</a>
+              <%= link_to "#{t :main_menu2}", "/service/magento_development.html#{custom_locale_link}", class: 'dropdown-toggle' , data: {no_turbolink: true, toggle: "modal", hover: 'dropdown'}  %>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Development from Scratch</a></li>
-                <li><a href="#">Development custom Extensions</a></li>
-                <li><a href="#">Integration 3-party Extensions</a></li>
-                <li><a href="#">Migration to Magento</a></li>
-                <li><a href="#">Magento Enterprise</a></li>
+                <li><%= link_to "#{t :main_menu_submenu6}", "/service/development_from_scratch.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
+                <li><%= link_to "#{t :main_menu_submenu7}", "/service/development_custom_extensions.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
+                <li><%= link_to "#{t :main_menu_submenu8}", "/service/integration_3-party_extensions.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
+                <li><%= link_to "#{t :main_menu_submenu9}", "/service/migration_to_magento.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
+                <li><%= link_to "#{t :main_menu_submenu10}", "/service/magento_enterprise.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Magento Design</a>
+              <%= link_to "#{t :main_menu3}", "/service/magento_design.html#{custom_locale_link}", class: 'dropdown-toggle' , data: {no_turbolink: true, toggle: "modal", hover: 'dropdown'}  %>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">PSD to Magento</a></li>
-                <li><a href="#">Theme Development</a></li>
-                <li><a href="#">Theme Integration</a></li>
-                <li><a href="#">Mobile Theme Development</a></li>
+                <li><%= link_to "#{t :main_menu_submenu11}", "/service/psd_to_magento.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
+                <li><%= link_to "#{t :main_menu_submenu12}", "/service/theme_development.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
+                <li><%= link_to "#{t :main_menu_submenu13}", "/service/theme_integration.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
+                <li><%= link_to "#{t :main_menu_submenu14}", "/service/mobile_theme_development.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Magento Support</a>
+              <%= link_to "#{t :main_menu4}", "/service/magento_support.html#{custom_locale_link}", class: 'dropdown-toggle' , data: {no_turbolink: true, toggle: "modal", hover: 'dropdown'}  %>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Magento stores support</a></li>
-                <li><a href="#">Magento Upgrade</a></li>
-                <li><a href="#">Extensions Upgrade</a></li>
-                <li><a href="#">Magento Performance</a></li>
-                <li><a href="#">Magento Consulting</a></li>
-                <li><a href="#">Magento Tutorials</a></li>
+                <li><%= link_to "#{t :main_menu_submenu15}", "/service/magento_upgrade.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
+                <li><%= link_to "#{t :main_menu_submenu16}", "/service/extensions_upgrade.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
+                <li><%= link_to "#{t :main_menu_submenu17}", "/service/magento_performance.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
+                <li><%= link_to "#{t :main_menu_submenu18}", "/service/magento_consulting.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
+                <li><%= link_to "#{t :main_menu_submenu19}", "/service/magento_training.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Magento Promotion</a>
+              <%= link_to "#{t :main_menu5}", "/service/magento_promotion.html#{custom_locale_link}", class: 'dropdown-toggle' , data: {no_turbolink: true, toggle: "modal", hover: 'dropdown'}  %>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Magento SEO Optimization</a></li>
-                <li><a href="#">Magento SMM</a></li>
-                <li><a href="#">Online marketing for Magento</a></li>
+                <li><%= link_to "#{t :main_menu_submenu20}", "/service/magento_seo_optimization.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
+                <li><%= link_to "#{t :main_menu_submenu21}", "/service/magento_smm.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
+                <li><%= link_to "#{t :main_menu_submenu22}", "/service/online_marketing_for_magento.html#{custom_locale_link}", class: '', data: {no_turbolink: true}  %></li>
               </ul>
             </li>
           </ul>

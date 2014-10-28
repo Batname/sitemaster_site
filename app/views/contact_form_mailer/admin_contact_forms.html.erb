@@ -5,12 +5,12 @@
 </head>
 <body>
 
-Hello Admin<br>
+<%=t :massage_admin_content_1 %><br>
 
-You have massage from <%= @contact_form.name %><br>
-User email: <%= @contact_form.email %><br>
-User Subject: <%= @contact_form.subject %><br>
-User massage: <%= @contact_form.massage %><br>
+<%=t :massage_admin_content_2 %> <%= @contact_form.name %><br>
+<%=t :massage_admin_content_3 %> <%= @contact_form.email %><br>
+<%=t :massage_admin_content_4 %> <%= @contact_form.subject %><br>
+<%=t :massage_admin_content_5 %> <%= @contact_form.massage %><br>
 
 <a href="<%= root_url %><%=  @contact_form.attachment.url if @contact_form.attachment? %>"><%= @contact_form.attachment_file_name if @contact_form.attachment? %></a>
 

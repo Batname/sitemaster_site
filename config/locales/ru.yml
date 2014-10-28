@@ -31,18 +31,127 @@ ru:
                other: "is too short (minimum is %{count} characters)"
         page:
           attributes:
+            permalink:
+              too_short: "Слишком короткая ссылка"
             short_description:
+              blank: "не может быть пустым"
               too_long: "Слишком длинное короткое описание"
+        article:
+          attributes:
+            permalink:
+              too_short: "Слишком короткая ссылка"
+            short_description:
+              blank: "не может быть пустым"
+              too_long: "Слишком длинное короткое описание"
+        project:
+          attributes:
+            permalink:
+              too_short: "Слишком короткая ссылка"
+            short_description:
+              blank: "не может быть пустым"
+              too_long: "Слишком длинное короткое описание"
+        service:
+          attributes:
+            permalink:
+              too_short: "Слишком короткая ссылка"
+            short_description:
+              blank: "не может быть пустым"
+              too_long: "Слишком длинное короткое описание"
+  helpers:
+    label:
+      article:
+        title: 'Заголовок'
+        text: 'Текст'
+        short_description: 'Короткое описание'
+        permalink: 'Ссылка'
+        position: 'Позиция'
+        visible: 'Видимость'
+      page:
+        title: 'Заголовок'
+        text: 'Текст'
+        short_description: 'Короткое описание'
+        permalink: 'Ссылка'
+        position: 'Позиция'
+        visible: 'Видимость'
+      project:
+        title: 'Заголовок'
+        text: 'Текст'
+        short_description: 'Короткое описание'
+        permalink: 'Ссылка'
+        position: 'Позиция'
+        visible: 'Видимость'
+      service:
+        title: 'Заголовок'
+        text: 'Текст'
+        short_description: 'Короткое описание'
+        permalink: 'Ссылка'
+        position: 'Позиция'
+        visible: 'Видимость'
+    submit:
+      article:
+        create: "Добавить %{model}"
+        update: "Обновить %{model}"
+      page:
+        create: "Добавить %{model}"
+        update: "Обновить %{model}"
+      project:
+        create: "Добавить %{model}"
+        update: "Обновить %{model}"
+      service:
+        create: "Добавить %{model}"
+        update: "Обновить %{model}"
+  will_paginate:
+    next_label: "Вперед →"
+    previous_label: "← Назад"
   menu_1: "Домой"
-  menu_2: "О Нас"
+  menu_2: "Общая информация"
   menu_3: "Услуги"
   menu_4: "Портфолио"
   menu_5: "Команда"
   menu_6: "Контакты"
-  menu_7: "Новости"
-  about_title_1: "о нас"
+  menu_7: "Расчет стоимости"
+  menu_8: "Пользователи"
+  menu_9: "Мой пользователь"
+  menu_10: "Настройки"
+  menu_11: "Выйти"
+  menu_12: "Редактирование услуг"
+  menu_13: "Редактирование проектов"
+  menu_14: "Редактирование новостей"
+  menu_15: "Редактирование страниц"
+  main_menu1: "О нас"
+  main_menu2: "Magento Разработка"
+  main_menu3: "Magento Дизайн"
+  main_menu4: "Magento Поддержка"
+  main_menu5: "Magento Продвижение"
+  main_menu_submenu1: "О Нас"
+  main_menu_submenu2: "Наша команда"
+  main_menu_submenu3: "Карьера"
+  main_menu_submenu4: "Контакты"
+  main_menu_submenu5: "Партнерство"
+  main_menu_submenu6: "Разработка с нуля"
+  main_menu_submenu7: "Разработка модулей"
+  main_menu_submenu8: "Интеграция модулей"
+  main_menu_submenu9: "Миграция на Magento"
+  main_menu_submenu10: "Magento Enterprise"
+  main_menu_submenu11: "Перенос PSD в Magento"
+  main_menu_submenu12: "Разработка шаблонов"
+  main_menu_submenu13: "Интеграция шаблонов"
+  main_menu_submenu14: "Разработка мобильных шаблонов"
+  main_menu_submenu15: "Обновления Magento"
+  main_menu_submenu16: "Обновления модулей"
+  main_menu_submenu17: "Оптимизация производительности"
+  main_menu_submenu18: "Magento Консалтинг"
+  main_menu_submenu19: "Magento Тренинги"
+  main_menu_submenu20: "Magento SEO Оптимизация"
+  main_menu_submenu21: "Magento SMM"
+  main_menu_submenu22: "Онлайн маркетинг для Magento"
+  header_content_1: "Разработка интернет магазинов на Magento"
+  about_title_1: "Информация"
   about_title_2: "Кто мы. Узнайте нас лучше."
-  about_content_1: "Мы разрабатываем интернет магазинов на основе Magento. Мы специализируемся на языках Php, Javascript, Html, Css, Xml"
+  about_content_1: "Креатив minds. Technical perfection. Big picture focus. Our team of certified Magento developers, consultants
+                            and designers takes care of our clients’ businesses striving for excellence in everything we do. Find more about
+                            our team, our services or get in touch if you want to work with us.
+                            Find more about our team, our services or get in touch if you want to work with us"
   about_content_2: "Мы создаем проекты весело и вместе."
   about_content_3: "Хорошая работа всегда заслуживает внимания, это значит что мы всегда проверяем и тестируем наши проекты.
                     Мы делаем полностью прозрачным творческий процесс разработчиков и дизайнеров."
@@ -53,8 +162,13 @@ ru:
                     Мы знаем цену успешного развития, и именно поэтому мы всегда думает о будущих возможностях.
                     Наша команда высоко мотивирована и мы всегда ищем возможности для обучения.
                     Мы отлично разбираемся в современных языках программирования, наши разработчики отлично решают проблемы и предотвращают последствия."
-  services_title_1: "sitemaster"
-  services_title_2: "Что мы делаем. Все наши услуги."
+  about_content_6: "Наши партнеры"
+  about_content_7: "Наши сертификаты"
+  about_content_8: "Последняя новость"
+  about_content_9: "Последние модули"
+  about_content_10: "Наша экосистема Magento"
+  services_title_1: "Услуги"
+  services_title_2: "Что мы делаем. Наши услуги."
   services_content_1: "Мы дизайнеры и разработчики. Мы делаем невероятные вещи для веб-проектов."
   services_content_2: "Мы специализируемся на разработке веб-приложений используя open-source технологии такие, как Ruby on Rails, Php, Java, и самые используемые стандарты JavaScript библиотек таких, как jQuery."
   services_content_3: "РАЗРАБОТКА WEB ПРИЛОЖЕНИЙ"
@@ -65,7 +179,7 @@ ru:
   services_content_8: "Разработка интернет магазинов на популярной CMS - Magento. Создание корпоративных, новостных сайтов - Wordpress CMS."
   services_content_9: "ДРУГИЕ УСЛУГИ"
   services_content_10: "Разработка для социальных сетей (facebook, vkontakte). Поддержка сайтов и приложений, хостинг. Сео оптимизация."
-  showcase_title_1: "портфолио"
+  showcase_title_1: "Портфолио"
   showcase_title_2: "Посмотрите наше портфолио."
   showcase_content_1: "Последовательность наших работ >> Исследование >> Дизайн >> Разработка >> Развёртывание!"
   showcase_content_2: "Причина работы с нами, то что по завершению вы получите успешный проект.
@@ -82,10 +196,10 @@ ru:
   team_content_8: "Разработчик"
   contact_title_1: "контакты"
   contact_title_2: "Будь с нами на связи, не спамь."
-  contact_content_1: "Используйте контактную форму"
+  contact_content_1: "Расчет стоимости"
   contact_content_2: "Имя *"
   contact_content_3: "E-mail *"
-  contact_content_4: "Заголовок *"
+  contact_content_4: "Бюджет *"
   contact_content_5: "Сообщение *"
   contact_content_6: "Мы всегда рады работать с вами."
   contact_content_7: "Начало работы начинается с краткого телефонного или Skype звонка, чтобы познакомиться с Вами, и Вашим проектом, чтобы увидеть, сколько понять Ваши идеи и потребности.
@@ -94,8 +208,8 @@ ru:
   contact_content_8: "бульвар Ивана Лепсе 8"
   contact_content_9: "Киев"
   contact_content_10: "Украина"
-  contact_content_11: "Телефон: +38 044 38 44 670 "
-  contact_content_12: "E-mail: master@sitemaster.com.ua"
+  contact_content_11: "+38 044 38 44 670 "
+  contact_content_12: "master@sitemaster.com.ua"
   contact_content_13: "Website: www.sitemaster.com.ua"
   contact_content_14: "ОТПР."
   contact_content_15: "......"
@@ -104,17 +218,53 @@ ru:
   contact_content_18: "Нажмите для загрузки файла"
   contact_content_19: "ЗАГРУЗ."
   contact_content_20: "Приложения: Только изображение, файл word или excel, pdf файл."
-  footer_content_1: "Мы можем больше :)"
-  massage_content_1: "Привет:"
+  contact_content_21: "Не уверен"
+  contact_content_22: "Emaster"
+  contact_content_23: "emaster"
+  contact_content_24: "Контакт"
+  footer_content_1: "Профессиональная разработка интернет магазинов на Magento"
+  massage_content_1: "Ваше Имя:"
   massage_content_2: "Ваш email:"
-  massage_content_3: "Ваша тема:"
-  massage_content_4: "Ваше сообщение:"
-  massage_content_5: "В ближайшее время мы с Вами свяжемся:"
+  massage_content_3: "Ваш Бюджет:"
+  massage_content_4: "Ваше Сообщение:"
+  massage_content_5: "В ближайшее время мы с Вами свяжемся"
   massage_content_6: "Прикрепленный файл"
-  news_title_1: "новости"
+  massage_admin_content_1: "Привет Admin"
+  massage_admin_content_2: "У тебя сообщение от:"
+  massage_admin_content_3: "Юзер email:"
+  massage_admin_content_4: "Юзер Budget:"
+  massage_admin_content_5: "Юзер massage:"
+  news_title_1: "Новости"
   news_title_2: "Наши последние новости. Будь на связи."
-  news_content_1: "узнай больше"
+  news_content_1: "Узнай больше"
+  news_content_2: "Все новости"
+  news_content_3: "Редактировать новость"
+  news_content_4: "Новая новость"
+  news_content_5: "Удалить новость"
   services_content_11: "Узнай больше."
+  form_1: "Войти"
+  error_1: "ошибки, исправьте перед сохраниенем:"
+  main_content_1: "Вы Уверены?"
+  main_content_2: "На Главную"
+  main_content_3: "free"
+  main_content_4: "Скачать"
+  page_content_1: "Посмотреть страницу"
+  page_content_2: "Все Страницы"
+  page_content_3: "Редактировать Страницу"
+  page_content_4: "Новая Страница"
+  page_content_5: "Удалить Страницу"
+  project_content_1: "Посмотреть Проект"
+  project_content_2: "Все Проекты"
+  project_content_3: "Редактировать Проект"
+  project_content_4: "Новый Проект"
+  project_content_5: "Удалить Проект"
+  service_content_1: "Посмотреть Услугу"
+  service_content_2: "Все Услуги"
+  service_content_3: "Редактировать Услугу"
+  service_content_4: "Новая Услуга"
+  service_content_5: "Удалить Услугу"
+  meta_1: "Профессиональная разработка интернет магазинов на Magento"
+  meta_description_1: "Мы разрабатываем интернет магазинов на основе Magento. Мы специализируемся на языках Php, Javascript, Html, Css, Xml"
 
 
 

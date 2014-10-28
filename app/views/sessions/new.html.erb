@@ -1,10 +1,10 @@
 <div id="about" class="main-content">
   <div class="container">
-    <% provide(:title, "Sign in") %>
+    <% provide(:title, "#{t :form_1}") %>
     <div class="subheader">
       <div class="subheader-icon"></div>
       <div class="subheader-text">
-        Sign in <span> </span>
+        <%= t :form_1 %> <span> </span>
       </div>
       <div class="subheader-separator"></div>
     </div>
@@ -27,7 +27,7 @@
             <%= f.label :password %>
             <%= f.password_field :password %>
 
-            <%= f.submit "Sign in", class: "submit-btn rounded", style: "float: left", id: "submit-mail", data: {:'disable-with' => "#{t :contact_content_15}"} %>
+            <%= f.submit "#{t :form_1}", class: "submit-btn rounded", style: "float: left", id: "submit-mail", data: {:'disable-with' => "#{t :contact_content_15}"} %>
         <% end %>
 
         <br>

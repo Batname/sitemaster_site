@@ -78,7 +78,7 @@ class ArticlesController < ApplicationController
 
   def determine_layout
     case
-      when (signed_in? && params[:action] == 'new' || signed_in? && params[:action] == 'edit')
+      when (signed_in? && params[:action] == 'new' || signed_in? && params[:action] == 'edit' )
         "admin"
       else
         "pages"

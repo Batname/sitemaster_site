@@ -1,5 +1,5 @@
 <% provide(:title, @article.title) %>
-<% provide(:description, @article.short_description) %>
+<% provide(:description, truncate(@article.short_description.html_safe, length: 250)) %>
     <div class="subheader">
       <div class="subheader-icon"></div>
       <div class="subheader-text">
@@ -12,9 +12,9 @@
       <div class="content-image"><%= image_tag @article.attachment.url %></div>
       <%end %>
     <div class="test"><%= @article.text.html_safe %></div>
-      <%= link_to 'Go to home', root_path , data: {no_turbolink: true} %> | <%= link_to 'All news', articles_path , data: {no_turbolink: true} %>
+      <%= link_to "#{t :main_content_2}", root_path , data: {no_turbolink: true} %> | <%= link_to "#{t :news_content_2}", articles_path , data: {no_turbolink: true} %>
     <% if signed_in? && current_user.admin? && !current_user?(@users) %>
-    | <%= link_to 'Edit', edit_article_path(@article) %>
+    | <%= link_to "#{t :news_content_3}", edit_article_path(@article) %>
     <% end %>
     <div class="clear"></div>
   </div>
