@@ -5,7 +5,7 @@
 
 .ui-state-default {
   position: fixed;
-  background-image: url('../images/menu/clouse.png') ;
+  background-image: url(image-path('menu/clouse.png'));
   background-repeat: no-repeat;
   width: 32px;
   height: 32px;
@@ -18,7 +18,7 @@
 
 .ui-state-default-op {
   position: fixed;
-  background-image: url('../images/menu/open.png') ;
+  background-image: url(image-path('menu/open.png'));
   background-repeat: no-repeat;
   width: 32px;
   height: 32px;

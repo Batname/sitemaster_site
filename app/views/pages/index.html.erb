@@ -23,8 +23,8 @@
                 <td><%= page.permalink %></td>
                 <td><%= link_to_unless_current("#{t :page_content_1}", {controller: 'pages', action: 'show', permalink: "#{page.permalink}.html"}, class: "", style: "", data: {no_turbolink: true}) %>
                 <td>
-                <td><%= link_to "#{t :page_content_3}", edit_page_path(page) %></td>
-                <td><%= link_to "#{t :page_content_5}", page_path(page), method: :delete, data: {confirm: "#{t :main_content_1}"} %></td>
+                <td><%= link_to "#{t :page_content_3}", edit_page_path(page), data: {no_turbolink: true} %></td>
+                <td><%= link_to "#{t :page_content_5}", page_path(page), method: :delete, data: {confirm: "#{t :main_content_1}",no_turbolink: true} %></td>
               </tr>
           <% end %>
         </table>

@@ -13,7 +13,7 @@
         <%= render 'form' %>
         <br>
         <br>
-        <%= link_to "#{t :news_content_2}", articles_path, class: "submit-btn rounded", style: "float: left" %>
+        <%= link_to "#{t :news_content_2}", articles_path, class: "submit-btn rounded", style: "float: left", data: {no_turbolink: true} %>
 
       </div>
       <div class="clear"></div>

@@ -53,11 +53,12 @@
       </div>
       <div class="col-xs-6">
         <h4><%= t :about_content_8 %></h4>
+        <% unless @last_article.nil? %>
             <h5><%= @last_article.title %></h5>
             <p><%= truncate(@last_article.short_description.html_safe, length: 550) %></p>
             <%= link_to_unless_current("#{t :news_content_1}", {controller: 'articles', action: 'show', permalink: @last_article.permalink}, class: "", style: "", data: {no_turbolink: true}) %> | <%= link_to "#{t :news_content_2}", blog_path, class: "rounded", data: {no_turbolink: true} %>
             <br><small><%= @last_article.created_at.to_formatted_s(:day_month_and_year) %></small><br><br>
-
+        <% end %>
       </div>
       <div class="col-xs-3">
         <h4><%= t :about_content_9 %><span class="label label-info"><%= t :main_content_3 %></span></h4>

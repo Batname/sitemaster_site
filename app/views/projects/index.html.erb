@@ -22,8 +22,8 @@
                 <td><%= project.short_description %></td>
                 <td><%= project.permalink %></td>
                 <td><%= link_to_unless_current("#{t :project_content_1}", {controller:'projects' , action: 'show', permalink: "#{project.permalink}.html"}, class: "", style: "", data: { no_turbolink: true } ) %> <td>
-                <td><%= link_to "#{t :project_content_3}", edit_project_path(project) %></td>
-                <td><%= link_to "#{t :project_content_5}", project_path(project), method: :delete, data: { confirm: "#{t :main_content_1}" } %></td>
+                <td><%= link_to "#{t :project_content_3}", edit_project_path(project), data: {no_turbolink: true} %></td>
+                <td><%= link_to "#{t :project_content_5}", project_path(project), method: :delete, data: { confirm: "#{t :main_content_1}",no_turbolink: true } %></td>
               </tr>
           <% end %>
         </table>

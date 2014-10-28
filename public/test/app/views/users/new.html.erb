@@ -1,0 +1,36 @@
+<div id="about" class="section about">
+  <div class="container">
+    <div class="arrow 01">
+      <%= image_tag("arrow/arrow_01.png", alt: "arrow_01") %>
+    </div>
+<% provide(:title, 'Sign up') %>
+    <div class="subheader">
+      <div class="subheader-icon"></div>
+      <div class="subheader-text">
+        Sign up <span> </span>
+      </div>
+      <div class="subheader-separator"></div>
+    </div>
+    <div class="column-455 m-right-70 m-top-50">
+  <div class="span6 offset3">
+    <%= form_for(@user) do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
+
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation %>
+
+      <%= f.submit "Create my account", class: "submit-btn rounded", style: "float: left", id: "submit-mail", data: {:'disable-with' => "#{t :contact_content_15}"} %>
+    <% end %>
+  </div>
+</div>
+  </div>
+</div>

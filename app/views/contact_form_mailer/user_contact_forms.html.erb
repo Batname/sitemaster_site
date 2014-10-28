@@ -13,6 +13,8 @@
 <% if @contact_form.attachment? %>
     <%=t :massage_content_6 %>
 <% end %>
+
+
 <a href="<%= root_url %><%=  @contact_form.attachment.url if @contact_form.attachment? %>"><%= @contact_form.attachment_file_name if @contact_form.attachment? %></a><br>
 
 <%=t :massage_content_5 %><br>

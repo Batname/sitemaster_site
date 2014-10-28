@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= full_title(yield(:title)) %></title>
+
+
+  <%= stylesheet_link_tag 'fonts/stylesheet.css' %>
+  <%= stylesheet_link_tag 'reset.css' %>
+  <%= stylesheet_link_tag 'site.css' %>
+  <%= stylesheet_link_tag 'jquery.lightbox-0.5.css' %>
+
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <%= favicon_link_tag '/favicon.png', rel: 'shortcut icon', type: 'image/png' %>
+
+  <%= javascript_include_tag 'modernizr-2.6.2.min.js' %>
+  <%= javascript_include_tag 'code4net.slideshow.js' %>
+  <%= javascript_include_tag 'pop-up-mask.js' %>
+  <%= javascript_include_tag 'on.scroll.js' %>
+  <%= javascript_include_tag 'ajax.js' %>
+  <%= javascript_include_tag 'jquery.lightbox-0.5.pack.js' %>
+  <%= javascript_include_tag 'script.js' %>
+  <%= javascript_include_tag 'main.js' %>
+
+  <!--[if lt IE 10]>
+  <script type="text/javascript" src="js/PIE.js"></script>
+  <![endif]-->
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="description" content="<%= full_description(yield(:description)) %>"/>
+  <meta name="keywords" content="HTML, CSS, JavaScript, PHP"/>
+  <meta name="author" content="Sitemaster"/>
+
+  <link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'/>
+
+</head>
+<body>
+<%= render "layouts/loader" %>
+<%= render "layouts/menu" %>
+<div id="scrollable">
+<%= render "layouts/header" %>
+  <%= yield %>
+<%= render "layouts/footer" %>
+<%= render "layouts/analitics"%>
+
+</div>
+
+</body>
+</html>

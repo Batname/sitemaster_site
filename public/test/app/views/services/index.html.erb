@@ -1,0 +1,39 @@
+<% provide(:title, 'Edit Services') %>
+
+<div class="section services" id="services">
+  <div class="container">
+    <div class="arrow 05">
+      <%= image_tag("arrow/arrow_01.png", alt: "arrow_01") %>
+    </div>
+    <div class="subheader">
+      <div class="subheader-icon"></div>
+      <div class="subheader-text">
+        Edit Services <span></span>
+      </div>
+      <div class="subheader-separator"></div>
+      <div class="m-top-50">
+        <%= link_to 'New service', new_service_path %>
+        <br>
+        <br>
+
+        <%= will_paginate %>
+        <table class="table">
+          <% @services.each do |service| %>
+              <tr>
+                <td><%= service.title %></td>
+                <td><%= truncate(service.text, length: 150)  %></td>
+                <td><%= service.short_description %></td>
+                <td><%= service.permalink %></td>
+                <td><%= link_to_unless_current("Show", {controller:'services' , action: 'show', permalink: service.permalink}, class: "", style: "", data: { no_turbolink: true } ) %> <td>
+                <td><%= link_to 'Edit', edit_service_path(service) %></td>
+                <td><%= link_to 'Destroy', service_path(service), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              </tr>
+          <% end %>
+        </table>
+        <%= will_paginate %>
+
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>

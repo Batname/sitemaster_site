@@ -26,7 +26,8 @@
         <div class="pic">
           <a href="images/portfolio/originals/portfolio_large_01.png" title="Lorem Ipsum"><span class="roll"></span><img src="images/portfolio/thumbs/portfolio_small_01.jpg" alt="image_01" /></a>
         </div>
-        <span>4auto</span>
+        <span><%= link_to_unless_current(Project.find_by_id(1).title, {controller:'projects' , action: 'show', permalink: Project.find_by_id(1).permalink}, class: "showcase-link", data: { no_turbolink: true }) %>
+          </span>
         <p>
           E Commerce / Php / Magento
           <br><a class="showcase-link" href="http://4auto-service.com.ua/" target="_blank">4auto-service.com.ua</a>
@@ -46,10 +47,10 @@
         <div class="pic">
           <a href="images/portfolio/originals/portfolio_large_03.png" title="Lorem Ipsum"><span class="roll"></span><img src="images/portfolio/thumbs/portfolio_small_03.jpg" alt="image_03" /></a>
         </div>
-        <span>Pokanalam VK - Reposts</span>
+        <span>Autotech</span>
         <p>
-          Php / Vk-Api
-          <br><a class="showcase-link" href="http://pokanalamspb.ru/promo_vk/" target="_blank">pokanalamspb.ru/promo_vk</a>
+          E Commerce / Php / Magento
+          <br><a class="showcase-link" href="http://autotech.ua/" target="_blank">www.autotech.ua</a>
         </p>
       </div>
       <div class="pic-frame rounded">

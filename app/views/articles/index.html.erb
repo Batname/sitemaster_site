@@ -25,8 +25,8 @@
         <br><small><%= article.created_at.to_formatted_s(:day_month_and_year) %></small><br><br>
 
         <% if signed_in? && current_user.admin? && !current_user?(@users) %>
-        <%= link_to "#{t :news_content_3}", edit_article_path(article) %>
-        <%= link_to "#{t :news_content_5}", article_path(article), method: :delete, data: {confirm: "#{t :main_content_1}"} %>
+        <%= link_to "#{t :news_content_3}", edit_article_path(article), data: {no_turbolink: true} %>
+        <%= link_to "#{t :news_content_5}", article_path(article), method: :delete, data: {confirm: "#{t :main_content_1}", no_turbolink: true} %>
         <% end %>
 
         <div class="clearfix"></div>

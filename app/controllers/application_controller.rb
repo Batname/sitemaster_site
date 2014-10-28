@@ -26,9 +26,9 @@ class ApplicationController < ActionController::Base
 
   def home_uri
     if request.remote_ip == '127.0.0.1'
-    'http://127.0.0.1/'
+    'http://localhost:3000/'
     elsif request.remote_ip == '107.170.6.153'
-    'http://107.170.6.153/'
+    'http://107.170.6.153:3000/'
     end
   end
 
