@@ -11,7 +11,7 @@
         <div class="page-form">
           <%= render 'form' %>
         </div>
-        <%= link_to "#{t :page_content_2}", pages_path, class: "submit-btn rounded", style: "float: left" %>
+        <%= link_to "#{t :page_content_2}", pages_path, class: "submit-btn rounded", style: "float: left", data: {no_turbolink: true} %>
         <br>
       </div>
       <div class="clearfix"></div>

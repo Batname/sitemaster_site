@@ -25,7 +25,11 @@ class ApplicationController < ActionController::Base
   end
 
   def home_uri
-    'http://localhost:3000/'
+    if request.remote_ip == '127.0.0.1'
+    'http://127.0.0.1/'
+    elsif request.remote_ip == '107.170.6.153'
+    'http://107.170.6.153/'
+    end
   end
 
   def custom_locale_link

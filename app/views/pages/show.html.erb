@@ -23,7 +23,7 @@
   <%= link_to "#{t :main_content_2}", root_path , data: {no_turbolink: true} %>
   <% if signed_in? && current_user.admin? && !current_user?(@users) %>
       | <%= link_to "#{t :page_content_2}", pages_path , data: {no_turbolink: true} %>
-      | <%= link_to "#{t :page_content_3}", edit_page_path(@page) %>
+      | <%= link_to "#{t :page_content_3}", edit_page_path(@page), data: {no_turbolink: true} %>
   <% end %>
   <div class="clear"></div>
 </div>
