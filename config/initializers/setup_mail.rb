@@ -9,3 +9,4 @@ ActionMailer::Base.smtp_settings = {
 }
 
 ActionMailer::Base.default_url_options[:host] = "localhost:3000"
+#ActionMailer::Base.default_url_options[:host] = "http://178.62.228.131"

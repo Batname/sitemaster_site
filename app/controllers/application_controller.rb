@@ -25,15 +25,12 @@ class ApplicationController < ActionController::Base
   end
 
   def home_uri
-    if request.remote_ip == '127.0.0.1'
     'http://localhost:3000/'
-    elsif request.remote_ip == '107.170.6.153'
-    'http://107.170.6.153:3000/'
-    end
+    #'http://emaster.pro/'
   end
 
   def custom_locale_link
-    "?locale=#{params[:locale] if params[:locale].present?}"
+    "?locale=#{params[:locale] || I18n.default_locale}"
   end
 
   private

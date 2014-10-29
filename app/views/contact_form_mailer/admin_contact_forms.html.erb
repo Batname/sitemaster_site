@@ -12,6 +12,7 @@
 <%=t :massage_admin_content_4 %> <%= @contact_form.subject %><br>
 <%=t :massage_admin_content_5 %> <%= @contact_form.massage %><br>
 
+<!--'http://178.62.228.131/'-->
 <a href="<%= root_url %><%=  @contact_form.attachment.url if @contact_form.attachment? %>"><%= @contact_form.attachment_file_name if @contact_form.attachment? %></a>
 
 </body>
