@@ -1,8 +1,8 @@
 ActionMailer::Base.smtp_settings = {
     :address              => "smtp.yandex.ua",
     :port                 => 587,
-    :domain               => "sitemaster.com.ua",
-    :user_name            => "master@sitemaster.com.ua",
+    :domain               => "emaster.pro",
+    :user_name            => "contact@emaster.pro",
     :password             => "21091091",
     :authentication       => "plain",
     :enable_starttls_auto => true

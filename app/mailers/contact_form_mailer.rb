@@ -1,5 +1,5 @@
 class ContactFormMailer < ActionMailer::Base
-  default from: "master@sitemaster.com.ua"
+  default from: "contact@emaster.pro"
 
   def user_contact_forms(contact_form)
     @contact_form = contact_form
@@ -8,6 +8,6 @@ class ContactFormMailer < ActionMailer::Base
 
   def admin_contact_forms(contact_form)
     @contact_form = contact_form
-    mail(to:"master@sitemaster.com.ua", subject: "Mail from #{contact_form.name}")
+    mail(to:"contact@emaster.pro", subject: "Mail from #{contact_form.name}")
   end
 end
